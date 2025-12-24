@@ -1,0 +1,166 @@
+/* src/components/Map.css */
+
+.map-container {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Leaflet custom styles */
+.leaflet-control-attribution {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(4px);
+}
+
+.dark-mode .leaflet-control-attribution {
+  background: rgba(30, 30, 30, 0.8);
+  color: #e0e0e0;
+}
+
+/* Custom marker styles */
+.custom-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.12s ease
+}
+
+.marker-dot {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: var(--shadow-sm);
+  display: inline-block;
+  transition: transform 0.12s ease, box-shadow 0.12s
+}
+
+.custom-marker:hover .marker-dot {
+  transform: scale(1.12);
+  box-shadow: var(--shadow-md)
+}
+
+.custom-marker.selected .marker-dot {
+  transform: scale(1.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+  border-width: 3px
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.15);
+  }
+}
+
+/* Airport popup */
+.airport-popup {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.airport-popup strong {
+  color: #0066cc;
+  font-size: 1.1rem;
+}
+
+.airport-popup small {
+  display: block;
+  margin-top: 0.25rem;
+  color: #666;
+}
+
+/* Map Legend */
+.map-legend {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 400;
+  max-width: 200px;
+}
+
+.dark-mode .map-legend {
+  background: #2a2a2a;
+  border-color: #444;
+  color: #e0e0e0;
+}
+
+.map-legend h4 {
+  margin: 0 0 0.75rem 0;
+  font-size: 1rem;
+  color: #0066cc;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.legend-icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.dark-mode .legend-icon {
+  /* No specific border needed for icons unless desired */
+}
+
+/* Leaflet zoom controls */
+.leaflet-control-zoom {
+  border-radius: 6px !important;
+  overflow: hidden;
+}
+
+.leaflet-control-zoom a {
+  width: 36px !important;
+  height: 36px !important;
+  line-height: 36px !important;
+  font-size: 1.2rem !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .map-legend {
+    bottom: 60px;
+    right: 10px;
+    padding: 0.75rem;
+    font-size: 0.85rem;
+  }
+
+  .map-legend h4 {
+    margin-bottom: 0.5rem;
+  }
+
+  .legend-item {
+    margin-bottom: 0.25rem;
+  }
+
+  .legend-color {
+    width: 16px;
+    height: 16px;
+  }
+}

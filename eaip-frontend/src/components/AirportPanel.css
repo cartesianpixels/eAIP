@@ -1,0 +1,471 @@
+/* src/components/AirportPanel.css */
+
+.airport-panel {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 400px;
+  max-height: 85vh;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  z-index: 500;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: slideIn 0.3s ease-out;
+}
+
+.airport-panel.dark {
+  background: #2a2a2a;
+  color: #e0e0e0;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Panel Header */
+.panel-header {
+  background: var(--color-surface);
+  color: var(--color-text);
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(12,16,20,0.04);
+}
+
+.header-title { flex: 1; }
+
+.panel-header h2 { margin:0; font-size:1.25rem; font-weight:700 }
+
+.iata-badge { display:inline-block; background:rgba(12,16,20,0.04); color:var(--color-muted); padding:0.25rem 0.5rem; border-radius:6px; font-size:0.85rem; margin-top:0.25rem }
+
+.close-btn { width:36px; height:36px; border-radius:8px; display:inline-flex; align-items:center; justify-content:center }
+
+.close-btn:focus{outline:2px solid rgba(25,118,210,0.12)}
+
+/* Airport Name */
+.airport-name {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-bottom: 1px solid #e0e0e0;
+  background: #f9f9f9;
+}
+
+.airport-panel.dark .airport-name {
+  background: #1a1a1a;
+  border-color: #444;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  border-bottom: 2px solid #e0e0e0;
+  background: #f5f5f5;
+}
+
+.airport-panel.dark .tabs {
+  background: #1a1a1a;
+  border-color: #444;
+}
+
+.tab {
+  flex: 1;
+  padding: 1rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #666;
+  transition: all 0.2s;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+}
+
+.airport-panel.dark .tab {
+  color: #aaa;
+}
+
+.tab:hover {
+  color: #0066cc;
+  background: rgba(0, 102, 204, 0.05);
+}
+
+.tab.active {
+  color: #0066cc;
+  border-bottom-color: #0066cc;
+}
+
+.airport-panel.dark .tab.active {
+  color: #00a8ff;
+  border-bottom-color: #00a8ff;
+}
+
+/* Panel Content */
+.panel-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.5rem;
+}
+
+.tab-pane {
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Info Grid */
+.info-grid { display:grid; grid-template-columns:1fr 1fr; gap:var(--spacing-sm); margin-bottom:var(--spacing-md) }
+
+.info-item { background:var(--color-surface); padding:0.75rem; border-radius:var(--radius-sm); border-left:3px solid rgba(12,16,20,0.04) }
+
+.airport-panel.dark .info-item {
+  background: #1a1a1a;
+  border-left-color: #00a8ff;
+}
+
+.info-item label {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+.info-value {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.airport-panel.dark .info-value {
+  color: #e0e0e0;
+}
+
+.info-value small {
+  display: block;
+  font-size: 0.8rem;
+  color: #999;
+  margin-top: 0.25rem;
+}
+
+/* External Links */
+.external-links {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.airport-panel.dark .external-links {
+  border-top-color: #444;
+}
+
+.external-links h4 {
+  margin: 0 0 0.75rem 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.airport-panel.dark .external-links h4 {
+  color: #aaa;
+}
+
+.external-link {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #0066cc;
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.airport-panel.dark .external-link {
+  color: #00a8ff;
+}
+
+.external-link:hover {
+  background: rgba(0, 102, 204, 0.1);
+  text-decoration: underline;
+}
+
+/* Runways List */
+.runways-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.runway-card {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 1rem;
+  border-left: 4px solid #0066cc;
+}
+
+.airport-panel.dark .runway-card {
+  background: #1a1a1a;
+  border-left-color: #00a8ff;
+}
+
+.runway-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.runway-header h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #0066cc;
+}
+
+.airport-panel.dark .runway-header h4 {
+  color: #00a8ff;
+}
+
+.lighting-badge {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-weight: 600;
+  background: #e0e0e0;
+  color: #333;
+}
+
+.lighting-badge.lit {
+  background: #d4edda;
+  color: #155724;
+}
+
+.lighting-badge.unlit {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+/* Runway Details */
+.runway-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.airport-panel.dark .detail-row {
+  color: #aaa;
+}
+
+.detail-row strong {
+  color: #333;
+  font-weight: 600;
+}
+
+.airport-panel.dark .detail-row strong {
+  color: #e0e0e0;
+}
+
+.surface-badge {
+  display: inline-block;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* ILS Info */
+.ils-info {
+  background: rgba(0, 102, 204, 0.1);
+  padding: 0.75rem;
+  border-radius: 6px;
+  margin-top: 0.75rem;
+  border-left: 3px solid #0066cc;
+}
+
+.airport-panel.dark .ils-info {
+  background: rgba(0, 168, 255, 0.1);
+  border-left-color: #00a8ff;
+}
+
+.ils-info h5 {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+  color: #0066cc;
+}
+
+.airport-panel.dark .ils-info h5 {
+  color: #00a8ff;
+}
+
+.ils-detail {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  margin-bottom: 0.25rem;
+}
+
+.ils-detail span {
+  color: #666;
+}
+
+.airport-panel.dark .ils-detail span {
+  color: #aaa;
+}
+
+/* Frequencies Table */
+.frequency-table { display:flex; flex-direction:column; gap:0.5rem }
+.frequency-item { display:grid; grid-template-columns: 140px 1fr; gap:0.5rem; align-items:center; background:var(--color-surface); padding:0.5rem 0.75rem; border-radius:6px; border-left:3px solid rgba(12,16,20,0.04) }
+
+.frequency-item .freq-type { color:var(--color-muted); font-weight:600 }
+.frequency-item .freq-value { font-weight:700; color:var(--color-text) }
+
+.freq-type {
+  font-weight: 600;
+  color: #0066cc;
+  font-size: 0.85rem;
+  min-width: 50px;
+  text-transform: uppercase;
+}
+
+.airport-panel.dark .freq-type {
+  color: #00a8ff;
+}
+
+.freq-value {
+  color: #333;
+  font-family: 'Courier New', monospace;
+  font-size: 1rem;
+}
+
+.airport-panel.dark .freq-value {
+  color: #e0e0e0;
+}
+
+.frequency-item.small {
+  padding: 0.5rem 0.75rem;
+}
+
+/* More Frequencies */
+.more-frequencies {
+  margin-top: 0.5rem;
+}
+
+.more-frequencies summary {
+  cursor: pointer;
+  color: #0066cc;
+  font-weight: 500;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.airport-panel.dark .more-frequencies summary {
+  color: #00a8ff;
+}
+
+.more-frequencies summary:hover {
+  background: rgba(0, 102, 204, 0.1);
+}
+
+.all-freqs {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* No Data */
+.no-data {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #999;
+  font-style: italic;
+}
+
+/* Scrollbar Styling */
+.panel-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.panel-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.panel-content::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+
+.panel-content::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+.airport-panel.dark .panel-content::-webkit-scrollbar-thumb {
+  background: #555;
+}
+
+.airport-panel.dark .panel-content::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .airport-panel {
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    max-height: none;
+    border-radius: 0;
+    animation: slideUp 0.3s ease-out;
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tabs {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+}

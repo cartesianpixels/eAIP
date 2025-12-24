@@ -37,7 +37,9 @@
   border-radius: 50%;
   border: 2px solid #fff;
   box-shadow: var(--shadow-sm);
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: transform 0.12s ease, box-shadow 0.12s
 }
 

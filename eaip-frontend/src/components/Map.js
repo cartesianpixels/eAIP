@@ -73,10 +73,10 @@ function Map({ airports, selectedAirport, onAirportSelect, darkMode }) {
       const isSelected = selectedAirport?.icao === airport.icao;
 
       // Create custom icon
-      const markerColor = isSelected ? '#ff6b6b' :
-        airport.type === 'large_airport' ? '#0066cc' :
-          airport.type === 'medium_airport' ? '#00a8ff' :
-            '#6c757d';
+      const markerColor = isSelected ? '#E93434' : // Red for selected
+        airport.type === 'large_airport' ? '#0D2C99' : // IVAO Dark Blue
+          airport.type === 'medium_airport' ? '#3C55AC' : // IVAO Light Blue
+            '#D7D7DC'; // Accent Grey for small
 
       const markerIcon = L.divIcon({
         className: `custom-marker ${isSelected ? 'selected' : ''}`,
@@ -140,19 +140,19 @@ function Map({ airports, selectedAirport, onAirportSelect, darkMode }) {
       <div className="map-legend">
         <h4>Airport Types</h4>
         <div className="legend-item">
-          <div className="legend-icon" style={{ color: '#0066cc' }}><FontAwesomeIcon icon={faCircle} /></div>
+          <div className="legend-icon" style={{ color: '#0D2C99' }}><FontAwesomeIcon icon={faCircle} /></div>
           <span>Large Airport</span>
         </div>
         <div className="legend-item">
-          <div className="legend-icon" style={{ color: '#00a8ff' }}><FontAwesomeIcon icon={faCircle} /></div>
+          <div className="legend-icon" style={{ color: '#3C55AC' }}><FontAwesomeIcon icon={faCircle} /></div>
           <span>Medium Airport</span>
         </div>
         <div className="legend-item">
-          <div className="legend-icon" style={{ color: '#6c757d' }}><FontAwesomeIcon icon={faCircle} /></div>
+          <div className="legend-icon" style={{ color: '#D7D7DC' }}><FontAwesomeIcon icon={faCircle} /></div>
           <span>Small Airport</span>
         </div>
         <div className="legend-item">
-          <div className="legend-icon" style={{ color: '#ff6b6b' }}><FontAwesomeIcon icon={faCircle} /></div>
+          <div className="legend-icon" style={{ color: '#E93434' }}><FontAwesomeIcon icon={faCircle} /></div>
           <span>Selected</span>
         </div>
       </div>

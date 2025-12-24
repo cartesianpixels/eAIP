@@ -1,17 +1,22 @@
 /* src/App.css */
 
 :root {
-  --primary-color: #0066cc;
-  --secondary-color: #00a8ff;
-  --success-color: #28a745;
-  --warning-color: #ffc107;
-  --danger-color: #dc3545;
+  --primary-color: #0D2C99;
+  /* IVAO Dark Blue */
+  --secondary-color: #3C55AC;
+  /* IVAO Light Blue */
+  --success-color: #2EC662;
+  --warning-color: #F9CC2C;
+  --danger-color: #E93434;
+  --info-color: #7EA2D6;
   --light-bg: #f5f7fa;
   --light-text: #333;
   --dark-bg: #1a1a1a;
   --dark-text: #e0e0e0;
   --border-color: #ddd;
   --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --font-header: 'Nunito Sans', sans-serif;
+  --font-body: 'Poppins', sans-serif;
 }
 
 * {
@@ -21,11 +26,20 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: var(--font-body);
+  font-size: 16px;
+  /* Baseline 16px */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-header);
 }
 
 /* Light Mode */
@@ -49,32 +63,38 @@ body {
 
 /* ===== HEADER ===== */
 .app-header {
-  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  background: var(--primary-color);
   color: white;
-  padding: 1.5rem;
+  padding: 1rem 2rem;
   box-shadow: var(--shadow);
   z-index: 100;
+  display: flex;
+  /* Flex layout */
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header-content {
-  margin-bottom: 1rem;
+  text-align: left;
 }
 
 .app-header h1 {
-  font-size: 2rem;
-  margin-bottom: 0.25rem;
+  font-size: 2.5rem;
+  /* 2.50rem per requirements */
+  margin-bottom: 0;
+  font-weight: 700;
 }
 
 .app-header p {
   font-size: 0.9rem;
-  opacity: 0.9;
+  opacity: 0.8;
+  font-weight: 300;
 }
 
 .header-controls {
   display: flex;
   gap: 1rem;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .search-container {
@@ -94,8 +114,8 @@ body {
 
 .search-input {
   width: 100%;
-  padding: 0.75rem 1rem 0.75rem 2.5rem;
-  /* Added padding-left for icon */
+  padding: 0.75rem 120px 0.75rem 2.5rem;
+  /* Increased padding-right for results count */
   border: none;
   border-radius: 6px;
   font-size: 1rem;

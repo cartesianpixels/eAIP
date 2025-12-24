@@ -3,17 +3,21 @@
 .airport-panel {
   position: absolute;
   right: 20px;
-  top: 20px;
-  width: 400px;
-  max-height: 85vh;
+  top: 80px;
+  /* Moved down to account for new header */
+  width: 420px;
+  /* Slightly wider */
+  max-height: calc(100vh - 100px);
   background: white;
-  border-radius: 12px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  /* Sharper corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   z-index: 500;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   animation: slideIn 0.3s ease-out;
+  font-family: var(--font-body);
 }
 
 .airport-panel.dark {
@@ -26,6 +30,7 @@
     opacity: 0;
     transform: translateX(20px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -34,32 +39,61 @@
 
 /* Panel Header */
 .panel-header {
-  background: var(--color-surface);
-  color: var(--color-text);
-  padding: 1rem 1rem;
+  background: var(--primary-color);
+  color: white;
+  padding: 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid rgba(12,16,20,0.04);
 }
 
-.header-title { flex: 1; }
+.header-title {
+  flex: 1;
+  text-align: left;
+}
 
-.panel-header h2 { margin:0; font-size:1.25rem; font-weight:700 }
+.panel-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: var(--font-header);
+}
 
-.iata-badge { display:inline-block; background:rgba(12,16,20,0.04); color:var(--color-muted); padding:0.25rem 0.5rem; border-radius:6px; font-size:0.85rem; margin-top:0.25rem }
+.iata-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  margin-top: 0.25rem
+}
 
-.close-btn { width:36px; height:36px; border-radius:8px; display:inline-flex; align-items:center; justify-content:center }
+.close-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: transparent;
+  cursor: pointer;
+}
 
-.close-btn:focus{outline:2px solid rgba(25,118,210,0.12)}
+.close-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
 
 /* Airport Name */
 .airport-name {
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 1.5rem;
   font-size: 1rem;
   font-weight: 500;
-  border-bottom: 1px solid #e0e0e0;
-  background: #f9f9f9;
+  border-bottom: 1px solid var(--border-color);
+  background: var(--light-bg);
+  text-align: left;
 }
 
 .airport-panel.dark .airport-name {
@@ -70,8 +104,8 @@
 /* Tabs */
 .tabs {
   display: flex;
-  border-bottom: 2px solid #e0e0e0;
-  background: #f5f5f5;
+  border-bottom: 2px solid var(--border-color);
+  background: #fff;
 }
 
 .airport-panel.dark .tabs {
@@ -86,11 +120,12 @@
   background: transparent;
   cursor: pointer;
   font-size: 0.9rem;
-  font-weight: 500;
+  font-weight: 600;
   color: #666;
   transition: all 0.2s;
   border-bottom: 3px solid transparent;
   margin-bottom: -2px;
+  font-family: var(--font-header);
 }
 
 .airport-panel.dark .tab {
@@ -98,18 +133,18 @@
 }
 
 .tab:hover {
-  color: #0066cc;
-  background: rgba(0, 102, 204, 0.05);
+  color: var(--primary-color);
+  background: rgba(13, 44, 153, 0.05);
 }
 
 .tab.active {
-  color: #0066cc;
-  border-bottom-color: #0066cc;
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
 }
 
 .airport-panel.dark .tab.active {
-  color: #00a8ff;
-  border-bottom-color: #00a8ff;
+  color: var(--secondary-color);
+  border-bottom-color: var(--secondary-color);
 }
 
 /* Panel Content */
@@ -127,34 +162,48 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
 }
 
 /* Info Grid */
-.info-grid { display:grid; grid-template-columns:1fr 1fr; gap:var(--spacing-sm); margin-bottom:var(--spacing-md) }
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
 
-.info-item { background:var(--color-surface); padding:0.75rem; border-radius:var(--radius-sm); border-left:3px solid rgba(12,16,20,0.04) }
+.info-item {
+  background: var(--light-bg);
+  padding: 1rem;
+  border-radius: 4px;
+  border-left: 3px solid var(--secondary-color);
+}
 
 .airport-panel.dark .info-item {
   background: #1a1a1a;
-  border-left-color: #00a8ff;
+  border-left-color: var(--secondary-color);
 }
 
 .info-item label {
   display: block;
   font-size: 0.75rem;
   text-transform: uppercase;
-  color: #999;
+  color: #666;
   margin-bottom: 0.25rem;
-  font-weight: 600;
+  font-weight: 700;
+  font-family: var(--font-header);
+  text-align: left;
 }
 
 .info-value {
   font-size: 0.95rem;
   font-weight: 500;
-  color: #333;
+  color: var(--light-text);
+  text-align: left;
 }
 
 .airport-panel.dark .info-value {
@@ -172,7 +221,7 @@
 .external-links {
   margin-top: 1.5rem;
   padding-top: 1.5rem;
-  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid var(--border-color);
 }
 
 .airport-panel.dark .external-links {
@@ -183,6 +232,8 @@
   margin: 0 0 0.75rem 0;
   font-size: 0.9rem;
   color: #666;
+  text-align: left;
+  font-family: var(--font-header);
 }
 
 .airport-panel.dark .external-links h4 {
@@ -192,20 +243,21 @@
 .external-link {
   display: block;
   margin-bottom: 0.5rem;
-  color: #0066cc;
+  color: var(--primary-color);
   text-decoration: none;
   font-size: 0.9rem;
   padding: 0.5rem;
   border-radius: 4px;
   transition: all 0.2s;
+  text-align: left;
 }
 
 .airport-panel.dark .external-link {
-  color: #00a8ff;
+  color: var(--secondary-color);
 }
 
 .external-link:hover {
-  background: rgba(0, 102, 204, 0.1);
+  background: rgba(13, 44, 153, 0.1);
   text-decoration: underline;
 }
 
@@ -217,15 +269,15 @@
 }
 
 .runway-card {
-  background: #f9f9f9;
-  border-radius: 8px;
+  background: var(--light-bg);
+  border-radius: 4px;
   padding: 1rem;
-  border-left: 4px solid #0066cc;
+  border-left: 4px solid var(--primary-color);
 }
 
 .airport-panel.dark .runway-card {
   background: #1a1a1a;
-  border-left-color: #00a8ff;
+  border-left-color: var(--secondary-color);
 }
 
 .runway-header {
@@ -238,30 +290,31 @@
 .runway-header h4 {
   margin: 0;
   font-size: 1.2rem;
-  color: #0066cc;
+  color: var(--primary-color);
+  font-family: var(--font-header);
 }
 
 .airport-panel.dark .runway-header h4 {
-  color: #00a8ff;
+  color: var(--secondary-color);
 }
 
 .lighting-badge {
   font-size: 0.75rem;
   padding: 0.25rem 0.75rem;
-  border-radius: 20px;
+  border-radius: 4px;
   font-weight: 600;
   background: #e0e0e0;
   color: #333;
 }
 
 .lighting-badge.lit {
-  background: #d4edda;
-  color: #155724;
+  background: rgba(46, 198, 98, 0.15);
+  color: var(--success-color);
 }
 
 .lighting-badge.unlit {
-  background: #f8d7da;
-  color: #721c24;
+  background: rgba(233, 52, 52, 0.15);
+  color: var(--danger-color);
 }
 
 /* Runway Details */
@@ -341,11 +394,32 @@
 }
 
 /* Frequencies Table */
-.frequency-table { display:flex; flex-direction:column; gap:0.5rem }
-.frequency-item { display:grid; grid-template-columns: 140px 1fr; gap:0.5rem; align-items:center; background:var(--color-surface); padding:0.5rem 0.75rem; border-radius:6px; border-left:3px solid rgba(12,16,20,0.04) }
+.frequency-table {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem
+}
 
-.frequency-item .freq-type { color:var(--color-muted); font-weight:600 }
-.frequency-item .freq-value { font-weight:700; color:var(--color-text) }
+.frequency-item {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 0.5rem;
+  align-items: center;
+  background: var(--color-surface);
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  border-left: 3px solid rgba(12, 16, 20, 0.04)
+}
+
+.frequency-item .freq-type {
+  color: var(--color-muted);
+  font-weight: 600
+}
+
+.frequency-item .freq-value {
+  font-weight: 700;
+  color: var(--color-text)
+}
 
 .freq-type {
   font-weight: 600;
@@ -453,6 +527,7 @@
       opacity: 0;
       transform: translateY(100%);
     }
+
     to {
       opacity: 1;
       transform: translateY(0);

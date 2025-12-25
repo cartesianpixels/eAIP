@@ -7,7 +7,8 @@
     "start": "node airport-service.js",
     "dev": "nodemon airport-service.js",
     "test": "node test-fetch.js",
-    "build": "echo 'No build step required'"
+    "build": "echo 'No build step required'",
+    "deploy": "vercel --prod"
   },
   "engines": {
     "node": "18.x"

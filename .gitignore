@@ -1,0 +1,30 @@
+# Node modules
+node_modules/
+eAIP/node_modules/
+eAIP/eaip-frontend/node_modules/
+
+# Environment variables (DO NOT COMMIT)
+.env
+.env.local
+.env.*.local
+
+# Build outputs
+eAIP/eaip-frontend/build/
+dist/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Downloaded charts (optional - these are large)
+eAIP/charts/

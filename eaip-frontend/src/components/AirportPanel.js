@@ -2,7 +2,8 @@
 import React, { useState } from 'react';
 import './AirportPanel.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTimes, faLightbulb, faCheck, faLink, faGlobe, faBroadcastTower, faBook, faPlane } from '@fortawesome/free-solid-svg-icons';
+import { faTimes, faLightbulb, faCheck, faGlobe, faBroadcastTower, faBook, faPlane, faMap } from '@fortawesome/free-solid-svg-icons';
+import ondaCharts from '../data/onda-charts.json';
 
 function AirportPanel({ airport, onClose, darkMode }) {
   const [activeTab, setActiveTab] = useState('overview');
@@ -48,13 +49,19 @@ function AirportPanel({ airport, onClose, darkMode }) {
           className={`tab ${activeTab === 'runways' ? 'active' : ''}`}
           onClick={() => setActiveTab('runways')}
         >
-          Runways ({airport.runways?.length || 0})
+          Runways
         </button>
         <button
           className={`tab ${activeTab === 'frequencies' ? 'active' : ''}`}
           onClick={() => setActiveTab('frequencies')}
         >
           Frequencies
+        </button>
+        <button
+          className={`tab ${activeTab === 'charts' ? 'active' : ''}`}
+          onClick={() => setActiveTab('charts')}
+        >
+          Charts
         </button>
       </div>
 
@@ -260,9 +267,87 @@ function AirportPanel({ airport, onClose, darkMode }) {
             )}
           </div>
         )}
+
+        {/* Charts Tab */}
+        {activeTab === 'charts' && (
+          <div className="tab-pane">
+            <ChartsContent airport={airport} />
+          </div>
+        )}
       </div>
     </div>
   );
 }
+
+function ChartsContent({ airport }) {
+  const [activeCategory, setActiveCategory] = useState('GEN');
+
+  // Get charts for this airport
+  const charts = ondaCharts[airport.icao] || [];
+
+  const categories = {
+    'GEN': ['regional', 'obstacles', 'radar', 'terrain'],
+    'GND': ['aerodrome', 'parking', 'movement'],
+    'SID': ['departure'],
+    'STAR': ['arrival'],
+    'APP': ['approach', 'visual']
+  };
+
+  const filteredCharts = charts.filter(chart =>
+    categories[activeCategory].includes(chart.category)
+  );
+
+  return (
+    <div className="charts-container">
+      <div className="chart-tabs">
+        {Object.keys(categories).map(cat => (
+          <button
+            key={cat}
+            className={`chart-tab ${activeCategory === cat ? 'active' : ''}`}
+            onClick={() => setActiveCategory(cat)}
+            style={{
+              borderBottomColor: activeCategory === cat ? getCategoryColor(cat) : 'transparent'
+            }}
+          >
+            {cat}
+          </button>
+        ))}
+      </div>
+
+      <div className="charts-list">
+        {filteredCharts.length > 0 ? (
+          filteredCharts.map((chart, idx) => (
+            <a
+              key={idx}
+              href={chart.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="chart-item"
+            >
+              <div className="chart-info">
+                <span className="chart-name">{chart.name}</span>
+                <span className="chart-ident">{chart.identifier}</span>
+              </div>
+              <FontAwesomeIcon icon={faMap} className="chart-icon" />
+            </a>
+          ))
+        ) : (
+          <div className="no-data">No charts available for {activeCategory}</div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+const getCategoryColor = (cat) => {
+  const colors = {
+    'GEN': '#e74c3c',
+    'GND': '#f1c40f',
+    'SID': '#9b59b6',
+    'STAR': '#3498db',
+    'APP': '#2ecc71'
+  };
+  return colors[cat] || '#999';
+};
 
 export default AirportPanel;

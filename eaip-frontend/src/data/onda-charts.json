@@ -1,0 +1,2384 @@
+{
+  "GMAD": [
+    {
+      "identifier": "AD2GMAD-15",
+      "code": 15,
+      "name": "Aerodrome Chart",
+      "type": "AD",
+      "category": "aerodrome",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMAD/AD2GMAD15.pdf"
+    },
+    {
+      "identifier": "AD2GMAD-17",
+      "code": 17,
+      "name": "Parking/Docking Chart",
+      "type": "AD",
+      "category": "parking",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMAD/AD2GMAD17.pdf"
+    },
+    {
+      "identifier": "AD2GMAD-19",
+      "code": 19,
+      "name": "Ground Movement Chart",
+      "type": "AD",
+      "category": "movement",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMAD/AD2GMAD19.pdf"
+    },
+    {
+      "identifier": "AD2GMAD-21",
+      "code": 21,
+      "name": "Obstacles Chart",
+      "type": "OBS",
+      "category": "obstacles",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMAD/AD2GMAD21.pdf"
+    },
+    {
+      "identifier": "AD2GMAD-25",
+      "code": 25,
+      "name": "Precision Approach Terrain Chart",
+      "type": "PATA",
+      "category": "terrain",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMAD/AD2GMAD25.pdf"
+    },
+    {
+      "identifier": "AD2GMAD-29",
+      "code": 29,
+      "name": "Regional/CTR/TMA Chart",
+      "type": "AREA",
+      "category": "regional",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMAD/AD2GMAD29.pdf"
+    },
+    {
+      "identifier": "AD2GMAD-31-1-1",
+      "code": 31,
+      "name": "Standard Instrument Departure (SID)",
+      "type": "SID",
+      "category": "departure",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMAD/AD2GMAD31_1_1.pdf"
+    },
+    {
+      "identifier": "AD2GMAD-31-1-2",
+      "code": 31,
+      "name": "Standard Instrument Departure (SID)",
+      "type": "SID",
+      "category": "departure",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMAD/AD2GMAD31_1_2.pdf"
+    },
+    {
+      "identifier": "AD2GMAD-33-1-1",
+      "code": 33,
+      "name": "Standard Terminal Arrival Route (STAR)",
+      "type": "STAR",
+      "category": "arrival",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMAD/AD2GMAD33_1_1.pdf"
+    },
+    {
+      "identifier": "AD2GMAD-33-1-2",
+      "code": 33,
+      "name": "Standard Terminal Arrival Route (STAR)",
+      "type": "STAR",
+      "category": "arrival",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMAD/AD2GMAD33_1_2.pdf"
+    },
+    {
+      "identifier": "AD2GMAD-35-2",
+      "code": 35,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMAD/AD2GMAD35_2.pdf"
+    },
+    {
+      "identifier": "AD2GMAD-39-1-1",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMAD/AD2GMAD39_1_1.pdf"
+    },
+    {
+      "identifier": "AD2GMAD-39-1-2",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMAD/AD2GMAD39_1_2.pdf"
+    },
+    {
+      "identifier": "AD2GMAD-39-1-3",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMAD/AD2GMAD39_1_3.pdf"
+    },
+    {
+      "identifier": "AD2GMAD-39-2-1",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMAD/AD2GMAD39_2_1.pdf"
+    },
+    {
+      "identifier": "AD2GMAD-39-2-2",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMAD/AD2GMAD39_2_2.pdf"
+    },
+    {
+      "identifier": "AD2GMAD-43",
+      "code": 43,
+      "name": "Visual Approach Chart",
+      "type": "VAC",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMAD/AD2GMAD43.pdf"
+    },
+    {
+      "identifier": "AD2GMAD-49",
+      "code": 49,
+      "name": "Radar Minimum Altitude Chart",
+      "type": "RMA",
+      "category": "radar",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMAD/AD2GMAD49.pdf"
+    }
+  ],
+  "GMAG": [
+    {
+      "identifier": "AD2GMAG-15",
+      "code": 15,
+      "name": "Aerodrome Chart",
+      "type": "AD",
+      "category": "aerodrome",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMAG/AD2GMAG15.pdf"
+    },
+    {
+      "identifier": "AD2GMAG-17",
+      "code": 17,
+      "name": "Parking/Docking Chart",
+      "type": "AD",
+      "category": "parking",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMAG/AD2GMAG17.pdf"
+    },
+    {
+      "identifier": "AD2GMAG-19",
+      "code": 19,
+      "name": "Ground Movement Chart",
+      "type": "AD",
+      "category": "movement",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMAG/AD2GMAG19.pdf"
+    },
+    {
+      "identifier": "AD2GMAG-21",
+      "code": 21,
+      "name": "Obstacles Chart",
+      "type": "OBS",
+      "category": "obstacles",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMAG/AD2GMAG21.pdf"
+    },
+    {
+      "identifier": "AD2GMAG-25",
+      "code": 25,
+      "name": "Precision Approach Terrain Chart",
+      "type": "PATA",
+      "category": "terrain",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMAG/AD2GMAG25.pdf"
+    },
+    {
+      "identifier": "AD2GMAG-39-1",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMAG/AD2GMAG39_1.pdf"
+    },
+    {
+      "identifier": "AD2GMAG-39-2",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMAG/AD2GMAG39_2.pdf"
+    },
+    {
+      "identifier": "AD2GMAG-39-3",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMAG/AD2GMAG39_3.pdf"
+    },
+    {
+      "identifier": "AD2GMAG-43",
+      "code": 43,
+      "name": "Visual Approach Chart",
+      "type": "VAC",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMAG/AD2GMAG43.pdf"
+    }
+  ],
+  "GMAT": [
+    {
+      "identifier": "AD2GMAT-15",
+      "code": 15,
+      "name": "Aerodrome Chart",
+      "type": "AD",
+      "category": "aerodrome",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMAT/AD2GMAT15.pdf"
+    },
+    {
+      "identifier": "AD2GMAT-17",
+      "code": 17,
+      "name": "Parking/Docking Chart",
+      "type": "AD",
+      "category": "parking",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMAT/AD2GMAT17.pdf"
+    },
+    {
+      "identifier": "AD2GMAT-19",
+      "code": 19,
+      "name": "Ground Movement Chart",
+      "type": "AD",
+      "category": "movement",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMAT/AD2GMAT19.pdf"
+    },
+    {
+      "identifier": "AD2GMAT-21",
+      "code": 21,
+      "name": "Obstacles Chart",
+      "type": "OBS",
+      "category": "obstacles",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMAT/AD2GMAT21.pdf"
+    },
+    {
+      "identifier": "AD2GMAT-25",
+      "code": 25,
+      "name": "Precision Approach Terrain Chart",
+      "type": "PATA",
+      "category": "terrain",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMAT/AD2GMAT25.pdf"
+    },
+    {
+      "identifier": "AD2GMAT-35-1",
+      "code": 35,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMAT/AD2GMAT35-1.pdf"
+    },
+    {
+      "identifier": "AD2GMAT-37-1",
+      "code": 37,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMAT/AD2GMAT37-1.pdf"
+    },
+    {
+      "identifier": "AD2GMAT-39-1",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMAT/AD2GMAT39-1.pdf"
+    },
+    {
+      "identifier": "AD2GMAT-43",
+      "code": 43,
+      "name": "Visual Approach Chart",
+      "type": "VAC",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMAT/AD2GMAT43.pdf"
+    }
+  ],
+  "GMAZ": [
+    {
+      "identifier": "AD2GMAZ-15",
+      "code": 15,
+      "name": "Aerodrome Chart",
+      "type": "AD",
+      "category": "aerodrome",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMAZ/AD2GMAZ15.pdf"
+    },
+    {
+      "identifier": "AD2GMAZ-17",
+      "code": 17,
+      "name": "Parking/Docking Chart",
+      "type": "AD",
+      "category": "parking",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMAZ/AD2GMAZ17.pdf"
+    },
+    {
+      "identifier": "AD2GMAZ-19",
+      "code": 19,
+      "name": "Ground Movement Chart",
+      "type": "AD",
+      "category": "movement",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMAZ/AD2GMAZ19.pdf"
+    },
+    {
+      "identifier": "AD2GMAZ-21",
+      "code": 21,
+      "name": "Obstacles Chart",
+      "type": "OBS",
+      "category": "obstacles",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMAZ/AD2GMAZ21.pdf"
+    },
+    {
+      "identifier": "AD2GMAZ-43",
+      "code": 43,
+      "name": "Visual Approach Chart",
+      "type": "VAC",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMAZ/AD2GMAZ43.pdf"
+    }
+  ],
+  "GMFB": [
+    {
+      "identifier": "AD2GMFB-15",
+      "code": 15,
+      "name": "Aerodrome Chart",
+      "type": "AD",
+      "category": "aerodrome",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFB/AD2GMFB15.pdf"
+    },
+    {
+      "identifier": "AD2GMFB-17",
+      "code": 17,
+      "name": "Parking/Docking Chart",
+      "type": "AD",
+      "category": "parking",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFB/AD2GMFB17.pdf"
+    },
+    {
+      "identifier": "AD2GMFB-19",
+      "code": 19,
+      "name": "Ground Movement Chart",
+      "type": "AD",
+      "category": "movement",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFB/AD2GMFB19.pdf"
+    },
+    {
+      "identifier": "AD2GMFB-21",
+      "code": 21,
+      "name": "Obstacles Chart",
+      "type": "OBS",
+      "category": "obstacles",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFB/AD2GMFB21.pdf"
+    },
+    {
+      "identifier": "AD2GMFB-39-1",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFB/AD2GMFB39-1.pdf"
+    },
+    {
+      "identifier": "AD2GMFB-39-2",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFB/AD2GMFB39-2.pdf"
+    },
+    {
+      "identifier": "AD2GMFB-39-3",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFB/AD2GMFB39-3.pdf"
+    },
+    {
+      "identifier": "AD2GMFB-43",
+      "code": 43,
+      "name": "Visual Approach Chart",
+      "type": "VAC",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFB/AD2GMFB-43.pdf"
+    }
+  ],
+  "GMFF": [
+    {
+      "identifier": "AD2GMFF-15",
+      "code": 15,
+      "name": "Aerodrome Chart",
+      "type": "AD",
+      "category": "aerodrome",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFF/AD2GMFF15.pdf"
+    },
+    {
+      "identifier": "AD2GMFF-17",
+      "code": 17,
+      "name": "Parking/Docking Chart",
+      "type": "AD",
+      "category": "parking",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFF/AD2GMFF17.pdf"
+    },
+    {
+      "identifier": "AD2GMFF-19",
+      "code": 19,
+      "name": "Ground Movement Chart",
+      "type": "AD",
+      "category": "movement",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFF/AD2GMFF19.pdf"
+    },
+    {
+      "identifier": "AD2GMFF-20",
+      "code": 21,
+      "name": "Obstacles Chart",
+      "type": "OBS",
+      "category": "obstacles",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFF/AD2GMFF20.pdf"
+    },
+    {
+      "identifier": "AD2GMFF-21",
+      "code": 35,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFF/AD2GMFF21.pdf"
+    },
+    {
+      "identifier": "AD2GMFF-23",
+      "code": 37,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFF/AD2GMFF23.pdf"
+    },
+    {
+      "identifier": "AD2GMFF-25",
+      "code": 25,
+      "name": "Precision Approach Terrain Chart",
+      "type": "PATA",
+      "category": "terrain",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFF/AD2GMFF25.pdf"
+    },
+    {
+      "identifier": "AD2GMFF-29",
+      "code": 29,
+      "name": "Regional/CTR/TMA Chart",
+      "type": "AREA",
+      "category": "regional",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFF/AD2GMFF29.pdf"
+    },
+    {
+      "identifier": "AD2GMFF-35-2",
+      "code": 35,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFF/AD2GMFF35-2.pdf"
+    },
+    {
+      "identifier": "AD2GMFF-37-2",
+      "code": 37,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFF/AD2GMFF37-2.pdf"
+    },
+    {
+      "identifier": "AD2GMFF-43",
+      "code": 43,
+      "name": "Visual Approach Chart",
+      "type": "VAC",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFF/AD2GMFF43.pdf"
+    }
+  ],
+  "GMFI": [
+    {
+      "identifier": "AD2GMFI-15",
+      "code": 15,
+      "name": "Aerodrome Chart",
+      "type": "AD",
+      "category": "aerodrome",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFI/AD2GMFI15.pdf"
+    },
+    {
+      "identifier": "AD2GMFI-17",
+      "code": 17,
+      "name": "Parking/Docking Chart",
+      "type": "AD",
+      "category": "parking",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFI/AD2GMFI17.pdf"
+    },
+    {
+      "identifier": "AD2GMFI-19",
+      "code": 19,
+      "name": "Ground Movement Chart",
+      "type": "AD",
+      "category": "movement",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFI/AD2GMFI19.pdf"
+    },
+    {
+      "identifier": "AD2GMFI-21",
+      "code": 21,
+      "name": "Obstacles Chart",
+      "type": "OBS",
+      "category": "obstacles",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFI/AD2GMFI21.pdf"
+    },
+    {
+      "identifier": "AD2GMFI-25",
+      "code": 25,
+      "name": "Precision Approach Terrain Chart",
+      "type": "PATA",
+      "category": "terrain",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFI/AD2GMFI25.pdf"
+    },
+    {
+      "identifier": "AD2GMFI-32-1",
+      "code": 31,
+      "name": "Standard Instrument Departure (SID)",
+      "type": "SID",
+      "category": "departure",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFI/AD2GMFI32-1.pdf"
+    },
+    {
+      "identifier": "AD2GMFI-32-2",
+      "code": 31,
+      "name": "Standard Instrument Departure (SID)",
+      "type": "SID",
+      "category": "departure",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFI/AD2GMFI32-2.pdf"
+    },
+    {
+      "identifier": "AD2GMFI-34-1",
+      "code": 33,
+      "name": "Standard Terminal Arrival Route (STAR)",
+      "type": "STAR",
+      "category": "arrival",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFI/AD2GMFI34-1.pdf"
+    },
+    {
+      "identifier": "AD2GMFI-41-1",
+      "code": 41,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFI/AD2GMFI41-1.pdf"
+    },
+    {
+      "identifier": "AD2GMFI-41-2",
+      "code": 41,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFI/AD2GMFI41-2.pdf"
+    },
+    {
+      "identifier": "AD2GMFI-43",
+      "code": 43,
+      "name": "Visual Approach Chart",
+      "type": "VAC",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFI/AD2GMFI43.pdf"
+    }
+  ],
+  "GMFK": [
+    {
+      "identifier": "AD2GMFK-15",
+      "code": 15,
+      "name": "Aerodrome Chart",
+      "type": "AD",
+      "category": "aerodrome",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFK/AD2GMFK--15.pdf"
+    },
+    {
+      "identifier": "AD2GMFK-17",
+      "code": 17,
+      "name": "Parking/Docking Chart",
+      "type": "AD",
+      "category": "parking",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFK/AD2GMFK--17.pdf"
+    },
+    {
+      "identifier": "AD2GMFK-19",
+      "code": 19,
+      "name": "Ground Movement Chart",
+      "type": "AD",
+      "category": "movement",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFK/AD2GMFK--19.pdf"
+    },
+    {
+      "identifier": "AD2GMFK-21",
+      "code": 21,
+      "name": "Obstacles Chart",
+      "type": "OBS",
+      "category": "obstacles",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFK/AD2GMFK21.PDF"
+    },
+    {
+      "identifier": "AD2GMFK-25",
+      "code": 25,
+      "name": "Precision Approach Terrain Chart",
+      "type": "PATA",
+      "category": "terrain",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFK/AD2GMFK25.PDF"
+    },
+    {
+      "identifier": "AD2GMFK-39-1",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFK/AD2GMFK39-1.pdf"
+    },
+    {
+      "identifier": "AD2GMFK-39-2",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFK/AD2GMFK39-2.pdf"
+    },
+    {
+      "identifier": "AD2GMFK-39-3",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFK/AD2GMFK39-3.pdf"
+    },
+    {
+      "identifier": "AD2GMFK-39-4",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFK/AD2GMFK39-4.pdf"
+    },
+    {
+      "identifier": "AD2GMFK-43",
+      "code": 43,
+      "name": "Visual Approach Chart",
+      "type": "VAC",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFK/AD2GMFK43.pdf"
+    }
+  ],
+  "GMFO": [
+    {
+      "identifier": "AD2GMFO-15",
+      "code": 15,
+      "name": "Aerodrome Chart",
+      "type": "AD",
+      "category": "aerodrome",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFO/AD2GMFO15.pdf"
+    },
+    {
+      "identifier": "AD2GMFO-17",
+      "code": 17,
+      "name": "Parking/Docking Chart",
+      "type": "AD",
+      "category": "parking",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFO/AD2GMFO17.pdf"
+    },
+    {
+      "identifier": "AD2GMFO-19",
+      "code": 19,
+      "name": "Ground Movement Chart",
+      "type": "AD",
+      "category": "movement",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFO/AD2GMFO19.pdf"
+    },
+    {
+      "identifier": "AD2GMFO-21",
+      "code": 21,
+      "name": "Obstacles Chart",
+      "type": "OBS",
+      "category": "obstacles",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFO/AD2GMFO21.pdf"
+    },
+    {
+      "identifier": "AD2GMFO-23",
+      "code": 21,
+      "name": "Obstacles Chart",
+      "type": "OBS",
+      "category": "obstacles",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFO/AD2GMFO23.pdf"
+    },
+    {
+      "identifier": "AD2GMFO-25",
+      "code": 25,
+      "name": "Precision Approach Terrain Chart",
+      "type": "PATA",
+      "category": "terrain",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFO/AD2GMFO25.pdf"
+    },
+    {
+      "identifier": "AD2GMFO-27",
+      "code": 25,
+      "name": "Precision Approach Terrain Chart",
+      "type": "PATA",
+      "category": "terrain",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFO/AD2GMFO27.pdf"
+    },
+    {
+      "identifier": "AD2GMFO-29",
+      "code": 29,
+      "name": "Regional/CTR/TMA Chart",
+      "type": "AREA",
+      "category": "regional",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFO/AD2GMFO29.pdf"
+    },
+    {
+      "identifier": "AD2GMFO-31-1",
+      "code": 31,
+      "name": "Standard Instrument Departure (SID)",
+      "type": "SID",
+      "category": "departure",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFO/AD2GMFO31-1.pdf"
+    },
+    {
+      "identifier": "AD2GMFO-31-3",
+      "code": 31,
+      "name": "Standard Instrument Departure (SID)",
+      "type": "SID",
+      "category": "departure",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFO/AD2GMFO31-3.pdf"
+    },
+    {
+      "identifier": "AD2GMFO-32-4",
+      "code": 31,
+      "name": "Standard Instrument Departure (SID)",
+      "type": "SID",
+      "category": "departure",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFO/AD2GMFO32-4.pdf"
+    },
+    {
+      "identifier": "AD2GMFO-33-1-1",
+      "code": 33,
+      "name": "Standard Terminal Arrival Route (STAR)",
+      "type": "STAR",
+      "category": "arrival",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFO/AD2GMFO33-1-1.pdf"
+    },
+    {
+      "identifier": "AD2GMFO-33-3",
+      "code": 33,
+      "name": "Standard Terminal Arrival Route (STAR)",
+      "type": "STAR",
+      "category": "arrival",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFO/AD2GMFO33-3.pdf"
+    },
+    {
+      "identifier": "AD2GMFO-34-4-1",
+      "code": 33,
+      "name": "Standard Terminal Arrival Route (STAR)",
+      "type": "STAR",
+      "category": "arrival",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFO/AD2GMFO34-4-1.pdf"
+    },
+    {
+      "identifier": "AD2GMFO-33-1-2",
+      "code": 35,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFO/AD2GMFO33-1-2.pdf"
+    },
+    {
+      "identifier": "AD2GMFO-34-4-2",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFO/AD2GMFO34-4-2.pdf"
+    },
+    {
+      "identifier": "AD2GMFO-37-2",
+      "code": 37,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFO/AD2GMFO37-2.pdf"
+    },
+    {
+      "identifier": "AD2GMFO-39-1-1",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFO/AD2GMFO39-1-1.pdf"
+    },
+    {
+      "identifier": "AD2GMFO-39-1-2",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFO/AD2GMFO39-1-2.pdf"
+    },
+    {
+      "identifier": "AD2GMFO-39-2-1",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFO/AD2GMFO39-2-1.pdf"
+    },
+    {
+      "identifier": "AD2GMFO-39-2-2",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFO/AD2GMFO39-2-2.pdf"
+    },
+    {
+      "identifier": "AD2GMFO-41-4",
+      "code": 41,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFO/AD2GMFO41-4.pdf"
+    },
+    {
+      "identifier": "AD2GMFO-43",
+      "code": 43,
+      "name": "Visual Approach Chart",
+      "type": "VAC",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMFO/AD2GMFO43.pdf"
+    }
+  ],
+  "GMMB": [
+    {
+      "identifier": "AD2GMMB-15",
+      "code": 15,
+      "name": "Aerodrome Chart",
+      "type": "AD",
+      "category": "aerodrome",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMB/AD2%20GMMB-15.pdf"
+    },
+    {
+      "identifier": "AD2GMMB-17",
+      "code": 17,
+      "name": "Parking/Docking Chart",
+      "type": "AD",
+      "category": "parking",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMB/AD2%20GMMB-17.pdf"
+    },
+    {
+      "identifier": "AD2GMMB-19",
+      "code": 19,
+      "name": "Ground Movement Chart",
+      "type": "AD",
+      "category": "movement",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMB/AD2%20GMMB-19.pdf"
+    },
+    {
+      "identifier": "AD2GMMB-21",
+      "code": 21,
+      "name": "Obstacles Chart",
+      "type": "OBS",
+      "category": "obstacles",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMB/AD2%20GMMB-21.pdf"
+    },
+    {
+      "identifier": "AD2GMMB-27",
+      "code": 25,
+      "name": "Precision Approach Terrain Chart",
+      "type": "PATA",
+      "category": "terrain",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMB/AD2%20GMMB-27.pdf"
+    },
+    {
+      "identifier": "AD2GMMB-41-1",
+      "code": 41,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMB/AD2%20GMMB-41-1.pdf"
+    },
+    {
+      "identifier": "AD2GMMB-41-2",
+      "code": 41,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMB/AD2%20GMMB-41-2.pdf"
+    },
+    {
+      "identifier": "AD2GMMB-43",
+      "code": 43,
+      "name": "Visual Approach Chart",
+      "type": "VAC",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMB/AD2%20GMMB-43.pdf"
+    }
+  ],
+  "GMMD": [
+    {
+      "identifier": "AD2GMMD-15",
+      "code": 15,
+      "name": "Aerodrome Chart",
+      "type": "AD",
+      "category": "aerodrome",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMD/AD2GMMD15.pdf"
+    },
+    {
+      "identifier": "AD2GMMD-17",
+      "code": 17,
+      "name": "Parking/Docking Chart",
+      "type": "AD",
+      "category": "parking",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMD/AD2GMMD17.pdf"
+    },
+    {
+      "identifier": "AD2GMMD-19",
+      "code": 19,
+      "name": "Ground Movement Chart",
+      "type": "AD",
+      "category": "movement",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMD/AD2GMMD19.pdf"
+    },
+    {
+      "identifier": "AD2GMMD-21",
+      "code": 21,
+      "name": "Obstacles Chart",
+      "type": "OBS",
+      "category": "obstacles",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMD/AD2GMMD21.pdf"
+    },
+    {
+      "identifier": "AD2GMMD-39-1-1",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMD/AD2GMMD39-1-1.pdf"
+    },
+    {
+      "identifier": "AD2GMMD-39-1-2",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMD/AD2GMMD39-1-2.pdf"
+    },
+    {
+      "identifier": "AD2GMMD-41-1",
+      "code": 41,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMD/AD2GMMD-41-1.pdf"
+    },
+    {
+      "identifier": "AD2GMMD-41-2",
+      "code": 41,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMD/AD2GMMD-41-2.pdf"
+    },
+    {
+      "identifier": "AD2GMMD-43",
+      "code": 43,
+      "name": "Visual Approach Chart",
+      "type": "VAC",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMD/AD2GMMD43.pdf"
+    }
+  ],
+  "GMME": [
+    {
+      "identifier": "AD2GMME-15",
+      "code": 15,
+      "name": "Aerodrome Chart",
+      "type": "AD",
+      "category": "aerodrome",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMME/AD2GMME15.pdf"
+    },
+    {
+      "identifier": "AD2GMME-17",
+      "code": 17,
+      "name": "Parking/Docking Chart",
+      "type": "AD",
+      "category": "parking",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMME/AD2GMME17.pdf"
+    },
+    {
+      "identifier": "AD2GMME-19",
+      "code": 19,
+      "name": "Ground Movement Chart",
+      "type": "AD",
+      "category": "movement",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMME/AD2GMME19.pdf"
+    },
+    {
+      "identifier": "AD2GMME-21",
+      "code": 21,
+      "name": "Obstacles Chart",
+      "type": "OBS",
+      "category": "obstacles",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMME/AD2GMME21.pdf"
+    },
+    {
+      "identifier": "AD2GMME-25",
+      "code": 25,
+      "name": "Precision Approach Terrain Chart",
+      "type": "PATA",
+      "category": "terrain",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMME/AD2GMME25.pdf"
+    },
+    {
+      "identifier": "AD2GMME-29",
+      "code": 29,
+      "name": "Regional/CTR/TMA Chart",
+      "type": "AREA",
+      "category": "regional",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMME/AD2GMME29.pdf"
+    },
+    {
+      "identifier": "AD2GMME-31-1",
+      "code": 31,
+      "name": "Standard Instrument Departure (SID)",
+      "type": "SID",
+      "category": "departure",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMME/AD2GMME31-1.pdf"
+    },
+    {
+      "identifier": "AD2GMME-31-2",
+      "code": 31,
+      "name": "Standard Instrument Departure (SID)",
+      "type": "SID",
+      "category": "departure",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMME/AD2GMME31-2.pdf"
+    },
+    {
+      "identifier": "AD2GMME-31-3",
+      "code": 31,
+      "name": "Standard Instrument Departure (SID)",
+      "type": "SID",
+      "category": "departure",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMME/AD2GMME31-3.pdf"
+    },
+    {
+      "identifier": "AD2GMME-31-4",
+      "code": 31,
+      "name": "Standard Instrument Departure (SID)",
+      "type": "SID",
+      "category": "departure",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMME/AD2GMME31-4.pdf"
+    },
+    {
+      "identifier": "AD2GMME-33-2",
+      "code": 33,
+      "name": "Standard Terminal Arrival Route (STAR)",
+      "type": "STAR",
+      "category": "arrival",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMME/AD2GMME33-2.pdf"
+    },
+    {
+      "identifier": "AD2GMME-35-1",
+      "code": 33,
+      "name": "Standard Terminal Arrival Route (STAR)",
+      "type": "STAR",
+      "category": "arrival",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMME/AD2GMME35-1.pdf"
+    },
+    {
+      "identifier": "AD2GMME-39-1-1",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMME/AD2GMME39-1-1.pdf"
+    },
+    {
+      "identifier": "AD2GMME-39-2-1",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMME/AD2GMME39-2-1.pdf"
+    },
+    {
+      "identifier": "AD2GMME-39-3",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMME/AD2GMME39-3.pdf"
+    },
+    {
+      "identifier": "AD2GMME-39-4",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMME/AD2GMME39-4.pdf"
+    },
+    {
+      "identifier": "AD2GMME-39-5",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMME/AD2GMME39-5.pdf"
+    },
+    {
+      "identifier": "AD2GMME-43",
+      "code": 43,
+      "name": "Visual Approach Chart",
+      "type": "VAC",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMME/AD2GMME43.pdf"
+    }
+  ],
+  "GMMH": [
+    {
+      "identifier": "AD2GMMH-15",
+      "code": 15,
+      "name": "Aerodrome Chart",
+      "type": "AD",
+      "category": "aerodrome",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMH/AD2GMMH15.pdf"
+    },
+    {
+      "identifier": "AD2GMMH-17",
+      "code": 17,
+      "name": "Parking/Docking Chart",
+      "type": "AD",
+      "category": "parking",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMH/AD2GMMH17.pdf"
+    },
+    {
+      "identifier": "AD2GMMH-19",
+      "code": 19,
+      "name": "Ground Movement Chart",
+      "type": "AD",
+      "category": "movement",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMH/AD2GMMH19.pdf"
+    },
+    {
+      "identifier": "AD2GMMH-21",
+      "code": 21,
+      "name": "Obstacles Chart",
+      "type": "OBS",
+      "category": "obstacles",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMH/AD2GMMH21.pdf"
+    },
+    {
+      "identifier": "AD2GMMH-25",
+      "code": 25,
+      "name": "Precision Approach Terrain Chart",
+      "type": "PATA",
+      "category": "terrain",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMH/AD2GMMH25.pdf"
+    },
+    {
+      "identifier": "AD2GMMH-29",
+      "code": 29,
+      "name": "Regional/CTR/TMA Chart",
+      "type": "AREA",
+      "category": "regional",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMH/AD2GMMH29.pdf"
+    },
+    {
+      "identifier": "AD2GMMH-39-1",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMH/AD2GMMH39_1.pdf"
+    },
+    {
+      "identifier": "AD2GMMH-39-2",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMH/AD2GMMH39_2.pdf"
+    },
+    {
+      "identifier": "AD2GMMH-41-1",
+      "code": 41,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMH/AD2GMMH41-1.pdf"
+    },
+    {
+      "identifier": "AD2GMMH-41-2",
+      "code": 41,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMH/AD2GMMH41-2.pdf"
+    },
+    {
+      "identifier": "AD2GMMH-43",
+      "code": 43,
+      "name": "Visual Approach Chart",
+      "type": "VAC",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMH/AD2GMMH43.pdf"
+    }
+  ],
+  "GMMI": [
+    {
+      "identifier": "AD2GMMI-15",
+      "code": 15,
+      "name": "Aerodrome Chart",
+      "type": "AD",
+      "category": "aerodrome",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMI/AD2GMMI15.pdf"
+    },
+    {
+      "identifier": "AD2GMMI-17",
+      "code": 17,
+      "name": "Parking/Docking Chart",
+      "type": "AD",
+      "category": "parking",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMI/AD2GMMI17.pdf"
+    },
+    {
+      "identifier": "AD2GMMI-19",
+      "code": 19,
+      "name": "Ground Movement Chart",
+      "type": "AD",
+      "category": "movement",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMI/AD2GMMI19.pdf"
+    },
+    {
+      "identifier": "AD2GMMI-21",
+      "code": 21,
+      "name": "Obstacles Chart",
+      "type": "OBS",
+      "category": "obstacles",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMI/AD2GMMI21.pdf"
+    },
+    {
+      "identifier": "AD2GMMI-25",
+      "code": 25,
+      "name": "Precision Approach Terrain Chart",
+      "type": "PATA",
+      "category": "terrain",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMI/AD2GMMI25.pdf"
+    },
+    {
+      "identifier": "AD2GMMI-39-1",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMI/AD2GMMI39-1.pdf"
+    },
+    {
+      "identifier": "AD2GMMI-39-2",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMI/AD2GMMI39-2.pdf"
+    },
+    {
+      "identifier": "AD2GMMI-39-3",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMI/AD2GMMI39_3.pdf"
+    },
+    {
+      "identifier": "AD2GMMI-43",
+      "code": 43,
+      "name": "Visual Approach Chart",
+      "type": "VAC",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMI/AD2GMMI43.pdf"
+    }
+  ],
+  "GMML": [
+    {
+      "identifier": "AD2GMML-15",
+      "code": 15,
+      "name": "Aerodrome Chart",
+      "type": "AD",
+      "category": "aerodrome",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMML/AD2GMML15.pdf"
+    },
+    {
+      "identifier": "AD2GMML-17",
+      "code": 17,
+      "name": "Parking/Docking Chart",
+      "type": "AD",
+      "category": "parking",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMML/AD2GMML17.pdf"
+    },
+    {
+      "identifier": "AD2GMML-19",
+      "code": 19,
+      "name": "Ground Movement Chart",
+      "type": "AD",
+      "category": "movement",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMML/AD2GMML19.pdf"
+    },
+    {
+      "identifier": "AD2GMML-21",
+      "code": 21,
+      "name": "Obstacles Chart",
+      "type": "OBS",
+      "category": "obstacles",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMML/AD2GMML21.pdf"
+    },
+    {
+      "identifier": "AD2GMML-23",
+      "code": 21,
+      "name": "Obstacles Chart",
+      "type": "OBS",
+      "category": "obstacles",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMML/AD2GMML23.pdf"
+    },
+    {
+      "identifier": "AD2GMML-25",
+      "code": 25,
+      "name": "Precision Approach Terrain Chart",
+      "type": "PATA",
+      "category": "terrain",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMML/AD2GMML25.pdf"
+    },
+    {
+      "identifier": "AD2GMML-29",
+      "code": 29,
+      "name": "Regional/CTR/TMA Chart",
+      "type": "AREA",
+      "category": "regional",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMML/AD2GMML29.pdf"
+    },
+    {
+      "identifier": "AD2GMML-39-1",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMML/AD2GMML39-1.pdf"
+    },
+    {
+      "identifier": "AD2GMML-39-2",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMML/AD2GMML39-2.pdf"
+    },
+    {
+      "identifier": "AD2GMML-41-1",
+      "code": 41,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMML/AD2GMML41-1.pdf"
+    },
+    {
+      "identifier": "AD2GMML-43",
+      "code": 43,
+      "name": "Visual Approach Chart",
+      "type": "VAC",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMML/AD2GMML43.pdf"
+    }
+  ],
+  "GMMN": [
+    {
+      "identifier": "AD2GMMN-15",
+      "code": 15,
+      "name": "Aerodrome Chart",
+      "type": "AD",
+      "category": "aerodrome",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMN/AD2GMMN15.pdf"
+    },
+    {
+      "identifier": "AD2GMMN-17",
+      "code": 17,
+      "name": "Parking/Docking Chart",
+      "type": "AD",
+      "category": "parking",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMN/AD2GMMN17.pdf"
+    },
+    {
+      "identifier": "AD2GMMN-19",
+      "code": 19,
+      "name": "Ground Movement Chart",
+      "type": "AD",
+      "category": "movement",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMN/AD2GMMN19.pdf"
+    },
+    {
+      "identifier": "AD2GMMN-21",
+      "code": 21,
+      "name": "Obstacles Chart",
+      "type": "OBS",
+      "category": "obstacles",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMN/AD2GMMN21.pdf"
+    },
+    {
+      "identifier": "AD2GMMN-23",
+      "code": 21,
+      "name": "Obstacles Chart",
+      "type": "OBS",
+      "category": "obstacles",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMN/AD2GMMN23.pdf"
+    },
+    {
+      "identifier": "AD2GMMN-25",
+      "code": 25,
+      "name": "Precision Approach Terrain Chart",
+      "type": "PATA",
+      "category": "terrain",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMN/AD2GMMN25.pdf"
+    },
+    {
+      "identifier": "AD2GMMN-27",
+      "code": 25,
+      "name": "Precision Approach Terrain Chart",
+      "type": "PATA",
+      "category": "terrain",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMN/AD2GMMN27.pdf"
+    },
+    {
+      "identifier": "AD2GMMN-29",
+      "code": 29,
+      "name": "Regional/CTR/TMA Chart",
+      "type": "AREA",
+      "category": "regional",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMN/AD2GMMN29.pdf"
+    },
+    {
+      "identifier": "AD2GMMN-31-1-1",
+      "code": 31,
+      "name": "Standard Instrument Departure (SID)",
+      "type": "SID",
+      "category": "departure",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMN/AD2GMMN31.1-1.pdf"
+    },
+    {
+      "identifier": "AD2GMMN-31-2-1",
+      "code": 31,
+      "name": "Standard Instrument Departure (SID)",
+      "type": "SID",
+      "category": "departure",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMN/AD2GMMN31.2-1.pdf"
+    },
+    {
+      "identifier": "AD2GMMN-33-1-1",
+      "code": 33,
+      "name": "Standard Terminal Arrival Route (STAR)",
+      "type": "STAR",
+      "category": "arrival",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMN/AD2GMMN33.1-1.pdf"
+    },
+    {
+      "identifier": "AD2GMMN-33-2-1",
+      "code": 33,
+      "name": "Standard Terminal Arrival Route (STAR)",
+      "type": "STAR",
+      "category": "arrival",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMN/AD2GMMN33.2-1.pdf"
+    },
+    {
+      "identifier": "AD2GMMN-33-1-2",
+      "code": 35,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMN/AD2GMMN33.1-2.pdf"
+    },
+    {
+      "identifier": "AD2GMMN-33-2-2",
+      "code": 35,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMN/AD2GMMN33.2-2.pdf"
+    },
+    {
+      "identifier": "AD2GMMN-35.1-1",
+      "code": 35,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMN/AD2GMMN35.1-1.pdf"
+    },
+    {
+      "identifier": "AD2GMMN-35.1-2",
+      "code": 35,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMN/AD2GMMN35.1-2.pdf"
+    },
+    {
+      "identifier": "AD2GMMN-35.1-3",
+      "code": 35,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMN/AD2GMMN35.1-3.pdf"
+    },
+    {
+      "identifier": "AD2GMMN-35.1-4",
+      "code": 35,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMN/AD2GMMN35.1-4.pdf"
+    },
+    {
+      "identifier": "AD2GMMN-35.2-1",
+      "code": 35,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMN/AD2GMMN35.2-1.pdf"
+    },
+    {
+      "identifier": "AD2GMMN-35.2-2",
+      "code": 35,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMN/AD2GMMN35.2-2.pdf"
+    },
+    {
+      "identifier": "AD2GMMN-39.1-1",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMN/AD2GMMN39.1-1.pdf"
+    },
+    {
+      "identifier": "AD2GMMN-39.1-3",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMN/AD2GMMN39.1-3.pdf"
+    },
+    {
+      "identifier": "AD2GMMN-39.1-4",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMN/AD2GMMN39.1-4.pdf"
+    },
+    {
+      "identifier": "AD2GMMN-39.2-1",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMN/AD2GMMN39.2-1.pdf"
+    },
+    {
+      "identifier": "AD2GMMN-39.2-2",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMN/AD2GMMN39.2-2.pdf"
+    },
+    {
+      "identifier": "AD2GMMN-39.2-3",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMN/AD2GMMN39.2-3.pdf"
+    },
+    {
+      "identifier": "AD2GMMN-39.2-4",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMN/AD2GMMN39.2-4.pdf"
+    },
+    {
+      "identifier": "AD2GMMN-39.2-5",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMN/AD2GMMN39.2-5.pdf"
+    },
+    {
+      "identifier": "AD2GMMN-39.2-6",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMN/AD2GMMN39.2-6.pdf"
+    },
+    {
+      "identifier": "AD2GMMN-39-3",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMN/AD2GMMN39-3.pdf"
+    },
+    {
+      "identifier": "AD2GMMN-39-4",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMN/AD2GMMN39-4.pdf"
+    },
+    {
+      "identifier": "AD2GMMN-39-5",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMN/AD2GMMN39-5.pdf"
+    },
+    {
+      "identifier": "AD2GMMN-43",
+      "code": 43,
+      "name": "Visual Approach Chart",
+      "type": "VAC",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMN/AD2GMMN43.pdf"
+    },
+    {
+      "identifier": "AD2GMMN-49",
+      "code": 49,
+      "name": "Radar Minimum Altitude Chart",
+      "type": "RMA",
+      "category": "radar",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMN/AD2GMMN49.pdf"
+    }
+  ],
+  "GMMT": [
+    {
+      "identifier": "AD2GMMT-15",
+      "code": 15,
+      "name": "Aerodrome Chart",
+      "type": "AD",
+      "category": "aerodrome",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMT/AD2GMMT15.pdf"
+    },
+    {
+      "identifier": "AD2GMMT-17",
+      "code": 17,
+      "name": "Parking/Docking Chart",
+      "type": "AD",
+      "category": "parking",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMT/AD2GMMT17.pdf"
+    },
+    {
+      "identifier": "AD2GMMT-19",
+      "code": 19,
+      "name": "Ground Movement Chart",
+      "type": "AD",
+      "category": "movement",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMT/AD2GMMT19.pdf"
+    },
+    {
+      "identifier": "AD2GMMT-21",
+      "code": 21,
+      "name": "Obstacles Chart",
+      "type": "OBS",
+      "category": "obstacles",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMT/AD2GMMT21.pdf"
+    },
+    {
+      "identifier": "AD2GMMT-43",
+      "code": 43,
+      "name": "Visual Approach Chart",
+      "type": "VAC",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMT/AD2GMMT43.pdf"
+    }
+  ],
+  "GMMW": [
+    {
+      "identifier": "AD2GMMW-15",
+      "code": 15,
+      "name": "Aerodrome Chart",
+      "type": "AD",
+      "category": "aerodrome",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMW/AD2GMMW15.pdf"
+    },
+    {
+      "identifier": "AD2GMMW-17",
+      "code": 17,
+      "name": "Parking/Docking Chart",
+      "type": "AD",
+      "category": "parking",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMW/AD2GMMW17.pdf"
+    },
+    {
+      "identifier": "AD2GMMW-19",
+      "code": 19,
+      "name": "Ground Movement Chart",
+      "type": "AD",
+      "category": "movement",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMW/AD2GMMW19.pdf"
+    },
+    {
+      "identifier": "AD2GMMW-21",
+      "code": 21,
+      "name": "Obstacles Chart",
+      "type": "OBS",
+      "category": "obstacles",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMW/AD2GMMW21.pdf"
+    },
+    {
+      "identifier": "AD2GMMW-23",
+      "code": 21,
+      "name": "Obstacles Chart",
+      "type": "OBS",
+      "category": "obstacles",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMW/AD2GMMW23.pdf"
+    },
+    {
+      "identifier": "AD2GMMW-29",
+      "code": 29,
+      "name": "Regional/CTR Chart",
+      "type": "AREA",
+      "category": "regional",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMW/AD2GMMW29.pdf"
+    },
+    {
+      "identifier": "AD2GMMW-39-1",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMW/AD2GMMW39.1.pdf"
+    },
+    {
+      "identifier": "AD2GMMW-39-2",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMW/AD2GMMW39.2.pdf"
+    },
+    {
+      "identifier": "AD2GMMW-39-3",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMW/AD2GMMW39-3.pdf"
+    },
+    {
+      "identifier": "AD2GMMW-41-1",
+      "code": 41,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMW/AD2GMMW41_1.pdf"
+    },
+    {
+      "identifier": "AD2GMMW-41-2",
+      "code": 41,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMW/AD2GMMW41_2.pdf"
+    },
+    {
+      "identifier": "AD2GMMW-43",
+      "code": 43,
+      "name": "Visual Approach Chart",
+      "type": "VAC",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMW/AD2GMMW43.pdf"
+    }
+  ],
+  "GMMX": [
+    {
+      "identifier": "AD2GMMX-15",
+      "code": 15,
+      "name": "Aerodrome Chart",
+      "type": "AD",
+      "category": "aerodrome",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMX/AD2GMMX15.pdf"
+    },
+    {
+      "identifier": "AD2GMMX-17",
+      "code": 17,
+      "name": "Parking/Docking Chart",
+      "type": "AD",
+      "category": "parking",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMX/AD2GMMX17.pdf"
+    },
+    {
+      "identifier": "AD2GMMX-19",
+      "code": 19,
+      "name": "Ground Movement Chart",
+      "type": "AD",
+      "category": "movement",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMX/AD2GMMX19.pdf"
+    },
+    {
+      "identifier": "AD2GMMX-21",
+      "code": 21,
+      "name": "Obstacles Chart",
+      "type": "OBS",
+      "category": "obstacles",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMX/AD2GMMX21.pdf"
+    },
+    {
+      "identifier": "AD2GMMX-25",
+      "code": 25,
+      "name": "Precision Approach Terrain Chart",
+      "type": "PATA",
+      "category": "terrain",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMX/AD2GMMX25.pdf"
+    },
+    {
+      "identifier": "AD2GMMX-29",
+      "code": 29,
+      "name": "Regional/CTR/TMA Chart",
+      "type": "AREA",
+      "category": "regional",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMX/AD2GMMX29.pdf"
+    },
+    {
+      "identifier": "AD2GMMX-31-1",
+      "code": 31,
+      "name": "Standard Instrument Departure (SID)",
+      "type": "SID",
+      "category": "departure",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMX/AD2GMMX31-1.pdf"
+    },
+    {
+      "identifier": "AD2GMMX-31-2",
+      "code": 31,
+      "name": "Standard Instrument Departure (SID)",
+      "type": "SID",
+      "category": "departure",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMX/AD2GMMX31-2.pdf"
+    },
+    {
+      "identifier": "AD2GMMX-33-1",
+      "code": 33,
+      "name": "Standard Terminal Arrival Route (STAR)",
+      "type": "STAR",
+      "category": "arrival",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMX/AD2GMMX33-1.pdf"
+    },
+    {
+      "identifier": "AD2GMMX-33-2",
+      "code": 33,
+      "name": "Standard Terminal Arrival Route (STAR)",
+      "type": "STAR",
+      "category": "arrival",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMX/AD2GMMX33-2.pdf"
+    },
+    {
+      "identifier": "AD2GMMX-34-1",
+      "code": 33,
+      "name": "Standard Terminal Arrival Route (STAR)",
+      "type": "STAR",
+      "category": "arrival",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMX/AD2GMMX34-1.pdf"
+    },
+    {
+      "identifier": "AD2GMMX-34-2",
+      "code": 33,
+      "name": "Standard Terminal Arrival Route (STAR)",
+      "type": "STAR",
+      "category": "arrival",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMX/AD2GMMX34-2.pdf"
+    },
+    {
+      "identifier": "AD2GMMX-39-1",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMX/AD2GMMX39-1.pdf"
+    },
+    {
+      "identifier": "AD2GMMX-39-1-1",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMX/AD2GMMX39-1-1.pdf"
+    },
+    {
+      "identifier": "AD2GMMX-39-1-3",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMX/AD2GMMX39-1-3.pdf"
+    },
+    {
+      "identifier": "AD2GMMX-39-1-4",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMX/AD2GMMX39-1-4.pdf"
+    },
+    {
+      "identifier": "AD2GMMX-39-2",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMX/AD2GMMX39-2.pdf"
+    },
+    {
+      "identifier": "AD2GMMX-39-2-1",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMX/AD2GMMX39-2-1.pdf"
+    },
+    {
+      "identifier": "AD2GMMX-39-3",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMX/AD2GMMX39-3.pdf"
+    },
+    {
+      "identifier": "AD2GMMX-39-3-1",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMX/AD2GMMX39-3-1.pdf"
+    },
+    {
+      "identifier": "AD2GMMX-41-1",
+      "code": 41,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMX/AD2GMMX41-1.pdf"
+    },
+    {
+      "identifier": "AD2GMMX-41-2",
+      "code": 41,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMX/AD2GMMX41-2.pdf"
+    },
+    {
+      "identifier": "AD2GMMX-43",
+      "code": 43,
+      "name": "Visual Approach Chart",
+      "type": "VAC",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMX/AD2GMMX43.pdf"
+    },
+    {
+      "identifier": "AD2GMMX-49",
+      "code": 49,
+      "name": "ATC Surveillance Minimum Altitude Chart",
+      "type": "RMA",
+      "category": "radar",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMX/AD2GMMX49.pdf"
+    }
+  ],
+  "GMMZ": [
+    {
+      "identifier": "AD2GMMZ-15",
+      "code": 15,
+      "name": "Aerodrome Chart",
+      "type": "AD",
+      "category": "aerodrome",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMZ/AD2GMMZ15.pdf"
+    },
+    {
+      "identifier": "AD2GMMZ-17",
+      "code": 17,
+      "name": "Parking/Docking Chart",
+      "type": "AD",
+      "category": "parking",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMZ/AD2GMMZ17.pdf"
+    },
+    {
+      "identifier": "AD2GMMZ-19",
+      "code": 19,
+      "name": "Ground Movement Chart",
+      "type": "AD",
+      "category": "movement",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMZ/AD2GMMZ19.pdf"
+    },
+    {
+      "identifier": "AD2GMMZ-21",
+      "code": 21,
+      "name": "Obstacles Chart",
+      "type": "OBS",
+      "category": "obstacles",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMZ/AD2GMMZ21.pdf"
+    },
+    {
+      "identifier": "AD2GMMZ-25",
+      "code": 25,
+      "name": "Precision Approach Terrain Chart",
+      "type": "PATA",
+      "category": "terrain",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMZ/AD2GMMZ25.pdf"
+    },
+    {
+      "identifier": "AD2GMMZ-29",
+      "code": 29,
+      "name": "Regional/CTR/TMA Chart",
+      "type": "AREA",
+      "category": "regional",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMZ/AD2GMMZ29.pdf"
+    },
+    {
+      "identifier": "AD2GMMZ-33-1",
+      "code": 33,
+      "name": "Standard Terminal Arrival Route (STAR)",
+      "type": "STAR",
+      "category": "arrival",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMZ/AD2GMMZ33.pdf"
+    },
+    {
+      "identifier": "AD2GMMZ-34-1",
+      "code": 33,
+      "name": "Standard Terminal Arrival Route (STAR)",
+      "type": "STAR",
+      "category": "arrival",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMZ/AD2GMMZ34_1.pdf"
+    },
+    {
+      "identifier": "AD2GMMZ-35-1",
+      "code": 33,
+      "name": "Standard Terminal Arrival Route (STAR)",
+      "type": "STAR",
+      "category": "arrival",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMZ/AD2GMMZ35_1.pdf"
+    },
+    {
+      "identifier": "AD2GMMZ-39-1",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMZ/AD2GMMZ39_1.pdf"
+    },
+    {
+      "identifier": "AD2GMMZ-39-2",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMZ/AD2GMMZ39_2.pdf"
+    },
+    {
+      "identifier": "AD2GMMZ-39-3",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMZ/AD2GMMZ39_3.pdf"
+    },
+    {
+      "identifier": "AD2GMMZ-41-1",
+      "code": 41,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMZ/AD2GMMZ41_1.pdf"
+    },
+    {
+      "identifier": "AD2GMMZ-41-2",
+      "code": 41,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMZ/AD2%20GMMZ41_2.pdf"
+    },
+    {
+      "identifier": "AD2GMMZ-43",
+      "code": 43,
+      "name": "Visual Approach Chart",
+      "type": "VAC",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMMZ/AD2GMMZ43.pdf"
+    }
+  ],
+  "GMTA": [
+    {
+      "identifier": "AD2GMTA-15",
+      "code": 15,
+      "name": "Aerodrome Chart",
+      "type": "AD",
+      "category": "aerodrome",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMTA/AD2GMTA-15.pdf"
+    },
+    {
+      "identifier": "AD2GMTA-17",
+      "code": 17,
+      "name": "Parking/Docking Chart",
+      "type": "AD",
+      "category": "parking",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMTA/AD2GMTA-17.pdf"
+    },
+    {
+      "identifier": "AD2GMTA-19",
+      "code": 19,
+      "name": "Ground Movement Chart",
+      "type": "AD",
+      "category": "movement",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMTA/AD2GMTA-19.pdf"
+    },
+    {
+      "identifier": "AD2GMTA-21",
+      "code": 21,
+      "name": "Obstacles Chart",
+      "type": "OBS",
+      "category": "obstacles",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMTA/AD2GMTA-21.pdf"
+    },
+    {
+      "identifier": "AD2GMTA-25",
+      "code": 25,
+      "name": "Precision Approach Terrain Chart",
+      "type": "PATA",
+      "category": "terrain",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMTA/AD2GMTA-25.pdf"
+    },
+    {
+      "identifier": "AD2GMTA-39-1",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMTA/AD2GMTA39-1.pdf"
+    },
+    {
+      "identifier": "AD2GMTA-39-2",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMTA/AD2GMTA39-2.pdf"
+    },
+    {
+      "identifier": "AD2GMTA-39-3",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMTA/AD2GMTA39-3.pdf"
+    },
+    {
+      "identifier": "AD2GMTA-39-4",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMTA/AD2GMTA39-4.pdf"
+    },
+    {
+      "identifier": "AD2GMTA-39-5",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMTA/AD2GMTA39-5.pdf"
+    },
+    {
+      "identifier": "AD2GMTA-43",
+      "code": 43,
+      "name": "Visual Approach Chart",
+      "type": "VAC",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMTA/AD2GMTA-43.pdf"
+    }
+  ],
+  "GMTN": [
+    {
+      "identifier": "AD2GMTN-15",
+      "code": 15,
+      "name": "Aerodrome Chart",
+      "type": "AD",
+      "category": "aerodrome",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMTN/AD2GMTN15.pdf"
+    },
+    {
+      "identifier": "AD2GMTN-17",
+      "code": 17,
+      "name": "Parking/Docking Chart",
+      "type": "AD",
+      "category": "parking",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMTN/AD2GMTN17.pdf"
+    },
+    {
+      "identifier": "AD2GMTN-19",
+      "code": 19,
+      "name": "Ground Movement Chart",
+      "type": "AD",
+      "category": "movement",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMTN/AD2GMTN19.pdf"
+    },
+    {
+      "identifier": "AD2GMTN-21",
+      "code": 21,
+      "name": "Obstacles Chart",
+      "type": "OBS",
+      "category": "obstacles",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMTN/AD2GMTN21.pdf"
+    },
+    {
+      "identifier": "AD2GMTN-23",
+      "code": 21,
+      "name": "Obstacles Chart",
+      "type": "OBS",
+      "category": "obstacles",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMTN/AD2GMTN23.pdf"
+    },
+    {
+      "identifier": "AD2GMTN-39-1",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMTN/AD2GMTN39_1.pdf"
+    },
+    {
+      "identifier": "AD2GMTN-39-2",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMTN/AD2GMTN39_2.pdf"
+    },
+    {
+      "identifier": "AD2GMTN-39-3",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMTN/AD2GMTN39_3.pdf"
+    },
+    {
+      "identifier": "AD2GMTN-39-4",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMTN/AD2GMTN39_4.pdf"
+    },
+    {
+      "identifier": "AD2GMTN-39-5",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMTN/AD2GMTN39_5.pdf"
+    },
+    {
+      "identifier": "AD2GMTN-39-6",
+      "code": 39,
+      "name": "Instrument Approach Chart",
+      "type": "APP",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMTN/AD2GMTN39_6.pdf"
+    },
+    {
+      "identifier": "AD2GMTN-43",
+      "code": 43,
+      "name": "Visual Approach Chart",
+      "type": "VAC",
+      "category": "approach",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMTN/AD2GMTN43.pdf"
+    }
+  ],
+  "GMTT": [
+    {
+      "identifier": "AD2GMTT-15",
+      "code": 15,
+      "name": "Aerodrome Chart",
+      "type": "AD",
+      "category": "aerodrome",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMTT/AD2GMTT15.pdf"
+    },
+    {
+      "identifier": "AD2GMTT-17",
+      "code": 17,
+      "name": "Parking/Docking Chart",
+      "type": "AD",
+      "category": "parking",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMTT/AD2GMTT17.pdf"
+    },
+    {
+      "identifier": "AD2GMTT-19",
+      "code": 19,
+      "name": "Ground Movement Chart",
+      "type": "AD",
+      "category": "movement",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMTT/AD2GMTT19.pdf"
+    },
+    {
+      "identifier": "AD2GMTT-21",
+      "code": 21,
+      "name": "Obstacles Chart",
+      "type": "OBS",
+      "category": "obstacles",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMTT/AD2GMTT21.pdf"
+    },
+    {
+      "identifier": "AD2GMTT-25",
+      "code": 25,
+      "name": "Precision Approach Terrain Chart",
+      "type": "PATA",
+      "category": "terrain",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMTT/AD2GMTT25.pdf"
+    },
+    {
+      "identifier": "AD2GMTT-29",
+      "code": 29,
+      "name": "Regional/CTR/TMA Chart",
+      "type": "AREA",
+      "category": "regional",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMTT/AD2GMTT29.pdf"
+    },
+    {
+      "identifier": "AD2GMTT-31-1",
+      "code": 31,
+      "name": "Standard Instrument Departure (SID)",
+      "type": "SID",
+      "category": "departure",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMTT/AD2GMTT31-1.pdf"
+    },
+    {
+      "identifier": "AD2GMTT-31-2",
+      "code": 31,
+      "name": "Standard Instrument Departure (SID)",
+      "type": "SID",
+      "category": "departure",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMTT/AD2GMTT31-2.pdf"
+    },
+    {
+      "identifier": "AD2GMTT-33-1",
+      "code": 33,
+      "name": "Standard Terminal Arrival Route (STAR)",
+      "type": "STAR",
+      "category": "arrival",
+      "url": "https://siamaroc.onda.ma/eaip/cartes/AD2GMTT/AD2GMTT33-1.pdf"
+    }
+  ]
+}

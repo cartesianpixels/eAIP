@@ -1,9 +1,9 @@
 /* src/components/AirportPanel.css */
 
 .airport-panel {
-  position: absolute;
+  position: fixed;
   right: 20px;
-  top: 80px;
+  top: 90px;
   /* Moved down to account for new header */
   width: 420px;
   /* Slightly wider */
@@ -12,7 +12,7 @@
   border-radius: 4px;
   /* Sharper corners */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  z-index: 500;
+  z-index: 2000;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -543,4 +543,129 @@
     top: 0;
     z-index: 10;
   }
+}
+
+/* Charts Tab */
+.charts-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.chart-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-color);
+  overflow-x: auto;
+}
+
+.airport-panel.dark .chart-tabs {
+  border-bottom-color: #444;
+}
+
+.chart-tab {
+  padding: 0.5rem 0.75rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #666;
+  border-bottom: 3px solid transparent;
+  white-space: nowrap;
+  transition: all 0.2s;
+  font-family: var(--font-header);
+}
+
+.airport-panel.dark .chart-tab {
+  color: #aaa;
+}
+
+.chart-tab:hover {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px 4px 0 0;
+}
+
+.airport-panel.dark .chart-tab:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.chart-tab.active {
+  color: #333;
+  font-weight: 700;
+}
+
+.airport-panel.dark .chart-tab.active {
+  color: #fff;
+}
+
+.charts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.chart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: var(--light-bg);
+  border-radius: 6px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s;
+  border-left: 3px solid transparent;
+}
+
+.airport-panel.dark .chart-item {
+  background: #1a1a1a;
+}
+
+.chart-item:hover {
+  transform: translateX(4px);
+  background: #eef2f7;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.airport-panel.dark .chart-item:hover {
+  background: #252525;
+}
+
+.chart-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  text-align: left;
+}
+
+.chart-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.airport-panel.dark .chart-name {
+  color: #e0e0e0;
+}
+
+.chart-ident {
+  font-size: 0.75rem;
+  color: #666;
+  font-family: 'Courier New', monospace;
+}
+
+.airport-panel.dark .chart-ident {
+  color: #999;
+}
+
+.chart-icon {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.chart-item:hover .chart-icon {
+  color: var(--primary-color);
 }

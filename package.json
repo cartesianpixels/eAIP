@@ -6,7 +6,11 @@
   "scripts": {
     "start": "node airport-service.js",
     "dev": "nodemon airport-service.js",
-    "test": "node test-fetch.js"
+    "test": "node test-fetch.js",
+    "build": "echo 'No build step required'"
+  },
+  "engines": {
+    "node": "18.x"
   },
   "keywords": [
     "aviation",

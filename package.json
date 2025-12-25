@@ -1,0 +1,30 @@
+{
+  "name": "eaip-morocco-airport-service",
+  "version": "1.0.0",
+  "description": "Airport runway data fetcher for eAIP Morocco using AirportDB.io",
+  "main": "airport-service.js",
+  "scripts": {
+    "start": "node airport-service.js",
+    "dev": "nodemon airport-service.js",
+    "test": "node test-fetch.js"
+  },
+  "keywords": [
+    "aviation",
+    "airports",
+    "morocco",
+    "runways",
+    "aip"
+  ],
+  "author": "IVAO Morocco",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "node-cache": "^5.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

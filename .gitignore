@@ -11,6 +11,7 @@ eAIP/eaip-frontend/node_modules/
 # Build outputs
 eAIP/eaip-frontend/build/
 dist/
+coverage/
 
 # Logs
 *.log

@@ -1,0 +1,3 @@
+[submodule "eAIP"]
+	path = eAIP
+	url = https://github.com/cartesianpixels/eAIP.git

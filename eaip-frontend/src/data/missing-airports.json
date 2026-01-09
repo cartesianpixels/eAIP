@@ -1,0 +1,29 @@
+{
+  "GMAG": {
+    "icao": "GMAG",
+    "iata": "GLN",
+    "name": "Guelmim Airport",
+    "city": "Guelmim",
+    "latitude_deg": 29.017849,
+    "longitude_deg": -10.051962,
+    "elevation_ft": 1119,
+    "type": "medium_airport",
+    "scheduled_service": "yes",
+    "runways": [
+      {
+        "le_ident": "05",
+        "he_ident": "23",
+        "length_ft": 8202,
+        "width_ft": 148,
+        "surface": "ASP",
+        "lighted": "1"
+      }
+    ],
+    "freqs": [
+      {
+        "type": "TWR",
+        "frequency_mhz": 122.5
+      }
+    ]
+  }
+}

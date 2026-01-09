@@ -4,9 +4,13 @@ import './AirportPanel.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes, faLightbulb, faCheck, faGlobe, faBroadcastTower, faBook, faPlane, faMap } from '@fortawesome/free-solid-svg-icons';
 import ondaCharts from '../data/onda-charts.json';
+import missingAirports from '../data/missing-airports.json'; // your manual fallback JSON
 
-function AirportPanel({ airport, onClose, darkMode }) {
+function AirportPanel({ airport: rawAirport, onClose, darkMode }) {
   const [activeTab, setActiveTab] = useState('overview');
+
+  // Merge fallback airport data
+  const airport = { ...missingAirports[rawAirport.icao], ...rawAirport };
 
   const getAirportTypeLabel = (type) => {
     const types = {
@@ -14,7 +18,7 @@ function AirportPanel({ airport, onClose, darkMode }) {
       'medium_airport': 'Medium Airport',
       'small_airport': 'Small Airport',
     };
-    return types[type] || type;
+    return types[type] || type || 'Unknown';
   };
 
   const getSurfaceColor = (surface) => {
@@ -35,34 +39,22 @@ function AirportPanel({ airport, onClose, darkMode }) {
           <h2>{airport.icao}</h2>
           {airport.iata && <span className="iata-badge">{airport.iata}</span>}
         </div>
-        <button className="close-btn u-btn" aria-label="Close panel" onClick={onClose}><FontAwesomeIcon icon={faTimes} /></button>
+        <button className="close-btn u-btn" aria-label="Close panel" onClick={onClose}>
+          <FontAwesomeIcon icon={faTimes} />
+        </button>
       </div>
+
       {/* Tabs */}
       <div className="tabs">
-        <button
-          className={`tab ${activeTab === 'overview' ? 'active' : ''}`}
-          onClick={() => setActiveTab('overview')}
-        >
-          Overview
-        </button>
-        <button
-          className={`tab ${activeTab === 'runways' ? 'active' : ''}`}
-          onClick={() => setActiveTab('runways')}
-        >
-          Runways
-        </button>
-        <button
-          className={`tab ${activeTab === 'frequencies' ? 'active' : ''}`}
-          onClick={() => setActiveTab('frequencies')}
-        >
-          Frequencies
-        </button>
-        <button
-          className={`tab ${activeTab === 'charts' ? 'active' : ''}`}
-          onClick={() => setActiveTab('charts')}
-        >
-          Charts
-        </button>
+        {['overview', 'runways', 'frequencies', 'charts'].map(tab => (
+          <button
+            key={tab}
+            className={`tab ${activeTab === tab ? 'active' : ''}`}
+            onClick={() => setActiveTab(tab)}
+          >
+            {tab.charAt(0).toUpperCase() + tab.slice(1)}
+          </button>
+        ))}
       </div>
 
       {/* Tab Content */}
@@ -84,28 +76,36 @@ function AirportPanel({ airport, onClose, darkMode }) {
               <div className="info-item">
                 <label>Elevation</label>
                 <div className="info-value">
-                  {airport.elevation_ft} ft<br />
-                  <small>({airport.elevation_m} m)</small>
+                  {airport.elevation_ft || 'N/A'} ft<br />
+                  <small>({airport.elevation_m || 'N/A'} m)</small>
                 </div>
               </div>
 
               <div className="info-item">
                 <label>Coordinates</label>
                 <div className="info-value">
-                  {airport.latitude.toFixed(4)}°<br />
-                  {airport.longitude.toFixed(4)}°
+                  {airport.latitude?.toFixed(4) || 'N/A'}°<br />
+                  {airport.longitude?.toFixed(4) || 'N/A'}°
                 </div>
               </div>
 
               <div className="info-item">
                 <label>Country</label>
-                <div className="info-value">{airport.country}</div>
+                <div className="info-value">{airport.country || 'N/A'}</div>
               </div>
 
               <div className="info-item">
                 <label>Scheduled Service</label>
                 <div className="info-value">
-                  {airport.scheduled_service ? (<><FontAwesomeIcon icon={faCheck} /> Yes</>) : (<><FontAwesomeIcon icon={faTimes} /> No</>)}
+                  {airport.scheduled_service ? (
+                    <>
+                      <FontAwesomeIcon icon={faCheck} /> Yes
+                    </>
+                  ) : (
+                    <>
+                      <FontAwesomeIcon icon={faTimes} /> No
+                    </>
+                  )}
                 </div>
               </div>
             </div>
@@ -147,54 +147,41 @@ function AirportPanel({ airport, onClose, darkMode }) {
                 {airport.runways.map((runway, idx) => (
                   <div key={idx} className="runway-card">
                     <div className="runway-header">
-                      <h4>{runway.identifier}</h4>
+                      <h4>{runway.identifier || `${runway.le_ident}/${runway.he_ident}`}</h4>
                       <span className={`lighting-badge ${runway.lighting ? 'lit' : 'unlit'}`}>
-                        {runway.lighting ? (<><FontAwesomeIcon icon={faLightbulb} fixedWidth /> Lit</>) : 'Unlit'}
+                        {runway.lighting ? (
+                          <>
+                            <FontAwesomeIcon icon={faLightbulb} fixedWidth /> Lit
+                          </>
+                        ) : (
+                          'Unlit'
+                        )}
                       </span>
                     </div>
 
                     <div className="runway-details">
                       <div className="detail-row">
                         <span>Length</span>
-                        <strong>{runway.length_ft} ft ({runway.length_m} m)</strong>
+                        <strong>{runway.length_ft || 'N/A'} ft ({runway.length_m || 'N/A'} m)</strong>
                       </div>
-
                       <div className="detail-row">
                         <span>Width</span>
-                        <strong>{runway.width_ft} ft ({runway.width_m} m)</strong>
+                        <strong>{runway.width_ft || 'N/A'} ft ({runway.width_m || 'N/A'} m)</strong>
                       </div>
-
                       <div className="detail-row">
                         <span>Surface</span>
-                        <div className="surface-badge" style={{ backgroundColor: getSurfaceColor(runway.surface) }}>
-                          {runway.surface}
+                        <div
+                          className="surface-badge"
+                          style={{ backgroundColor: getSurfaceColor(runway.surface) }}
+                        >
+                          {runway.surface || 'N/A'}
                         </div>
                       </div>
-
                       <div className="detail-row">
                         <span>Status</span>
                         <strong>{runway.closed ? '❌ Closed' : '✓ Open'}</strong>
                       </div>
                     </div>
-
-                    {/* ILS Information */}
-                    {(runway.le_ils || runway.he_ils) && (
-                      <div className="ils-info">
-                        <h5><FontAwesomeIcon icon={faPlane} fixedWidth /> Instrument Landing Systems</h5>
-                        {runway.le_heading && (
-                          <div className="ils-detail">
-                            <span>{runway.le_ident} ({runway.le_heading}°)</span>
-                            {runway.le_ils && <strong>{runway.le_ils.freq} MHz</strong>}
-                          </div>
-                        )}
-                        {runway.he_heading && (
-                          <div className="ils-detail">
-                            <span>{runway.he_ident} ({runway.he_heading}°)</span>
-                            {runway.he_ils && <strong>{runway.he_ils.freq} MHz</strong>}
-                          </div>
-                        )}
-                      </div>
-                    )}
                   </div>
                 ))}
               </div>
@@ -209,58 +196,32 @@ function AirportPanel({ airport, onClose, darkMode }) {
           <div className="tab-pane">
             {airport.frequencies && Object.keys(airport.frequencies).length > 0 ? (
               <div className="frequencies-list">
-                <div className="frequency-table">
-                  {airport.frequencies.tower && (
-                    <div className="frequency-item">
-                      <div className="freq-type"><FontAwesomeIcon icon={faBroadcastTower} fixedWidth /> TWR</div>
-                      <div className="freq-value">{airport.frequencies.tower} MHz</div>
-                    </div>
-                  )}
-
-                  {airport.frequencies.ground && (
-                    <div className="frequency-item">
-                      <div className="freq-type">GND</div>
-                      <div className="freq-value">{airport.frequencies.ground} MHz</div>
-                    </div>
-                  )}
-
-                  {airport.frequencies.approach && (
-                    <div className="frequency-item">
-                      <div className="freq-type">APP</div>
-                      <div className="freq-value">{airport.frequencies.approach} MHz</div>
-                    </div>
-                  )}
-
-                  {airport.frequencies.atis && (
-                    <div className="frequency-item">
-                      <div className="freq-type">ATIS</div>
-                      <div className="freq-value">{airport.frequencies.atis} MHz</div>
-                    </div>
-                  )}
-
-                  {airport.frequencies.unicom && (
-                    <div className="frequency-item">
-                      <div className="freq-type">UNICOM</div>
-                      <div className="freq-value">{airport.frequencies.unicom} MHz</div>
-                    </div>
-                  )}
-                </div>
-
-                {/* All frequencies if available */}
-                {airport.frequencies.all_frequencies &&
-                  airport.frequencies.all_frequencies.length > 5 && (
-                    <details className="more-frequencies">
-                      <summary>Show all frequencies</summary>
-                      <div className="all-freqs">
-                        {airport.frequencies.all_frequencies.map((freq, idx) => (
-                          <div key={idx} className="frequency-item small">
-                            <span className="freq-type">{freq.type}</span>
-                            <strong className="freq-value">{freq.frequency_mhz} MHz</strong>
-                          </div>
-                        ))}
+                {['tower', 'ground', 'approach', 'atis', 'unicom'].map(freqType => {
+                  const freqVal = airport.frequencies[freqType];
+                  if (!freqVal) return null;
+                  return (
+                    <div key={freqType} className="frequency-item">
+                      <div className="freq-type">
+                        <FontAwesomeIcon icon={faBroadcastTower} fixedWidth /> {freqType.toUpperCase()}
                       </div>
-                    </details>
-                  )}
+                      <div className="freq-value">{freqVal} MHz</div>
+                    </div>
+                  );
+                })}
+
+                {airport.frequencies.all_frequencies && airport.frequencies.all_frequencies.length > 5 && (
+                  <details className="more-frequencies">
+                    <summary>Show all frequencies</summary>
+                    <div className="all-freqs">
+                      {airport.frequencies.all_frequencies.map((freq, idx) => (
+                        <div key={idx} className="frequency-item small">
+                          <span className="freq-type">{freq.type}</span>
+                          <strong className="freq-value">{freq.frequency_mhz} MHz</strong>
+                        </div>
+                      ))}
+                    </div>
+                  </details>
+                )}
               </div>
             ) : (
               <div className="no-data">No frequency data available</div>
@@ -281,16 +242,14 @@ function AirportPanel({ airport, onClose, darkMode }) {
 
 function ChartsContent({ airport }) {
   const [activeCategory, setActiveCategory] = useState('GEN');
-
-  // Get charts for this airport
   const charts = ondaCharts[airport.icao] || [];
 
   const categories = {
-    'GEN': ['regional', 'obstacles', 'radar', 'terrain'],
-    'GND': ['aerodrome', 'parking', 'movement'],
-    'SID': ['departure'],
-    'STAR': ['arrival'],
-    'APP': ['approach', 'visual']
+    GEN: ['regional', 'obstacles', 'radar', 'terrain'],
+    GND: ['aerodrome', 'parking', 'movement'],
+    SID: ['departure'],
+    STAR: ['arrival'],
+    APP: ['approach', 'visual']
   };
 
   const filteredCharts = charts.filter(chart =>
@@ -305,9 +264,7 @@ function ChartsContent({ airport }) {
             key={cat}
             className={`chart-tab ${activeCategory === cat ? 'active' : ''}`}
             onClick={() => setActiveCategory(cat)}
-            style={{
-              borderBottomColor: activeCategory === cat ? getCategoryColor(cat) : 'transparent'
-            }}
+            style={{ borderBottomColor: activeCategory === cat ? getCategoryColor(cat) : 'transparent' }}
           >
             {cat}
           </button>
@@ -341,11 +298,11 @@ function ChartsContent({ airport }) {
 
 const getCategoryColor = (cat) => {
   const colors = {
-    'GEN': '#e74c3c',
-    'GND': '#f1c40f',
-    'SID': '#9b59b6',
-    'STAR': '#3498db',
-    'APP': '#2ecc71'
+    GEN: '#e74c3c',
+    GND: '#f1c40f',
+    SID: '#9b59b6',
+    STAR: '#3498db',
+    APP: '#2ecc71'
   };
   return colors[cat] || '#999';
 };

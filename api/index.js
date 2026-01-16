@@ -7,7 +7,8 @@ const axios = require('axios');
 const NodeCache = require('node-cache');
 const dotenv = require('dotenv');
 const cors = require('cors');
-const MISSING_AIRPORTS = require('./utils/missing-airports.json');
+const path = require('path');
+const MISSING_AIRPORTS = require(path.join(__dirname, 'utils', 'missing-airports.json'));
 
 dotenv.config();
 

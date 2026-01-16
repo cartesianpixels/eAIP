@@ -2,10 +2,10 @@
   "name": "eaip-morocco-airport-service",
   "version": "1.0.0",
   "description": "Airport runway data fetcher for eAIP Morocco using AirportDB.io",
-  "main": "airport-service.js",
+  "main": "api/index.js",
   "scripts": {
-    "start": "node airport-service.js",
-    "dev": "nodemon airport-service.js",
+    "start": "node api/index.js",
+    "dev": "nodemon api/index.js",
     "test": "node test-fetch.js",
     "build": "echo 'No build step required'",
     "deploy": "vercel --prod"

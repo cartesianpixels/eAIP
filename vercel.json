@@ -1,18 +1,9 @@
 {
     "version": 2,
-    "builds": [
+    "rewrites": [
         {
-            "src": "airport-service.js",
-            "use": "@vercel/node"
+            "source": "/api/(.*)",
+            "destination": "/api/index.js"
         }
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "airport-service.js"
-        }
-    ],
-    "env": {
-        "NODE_ENV": "production"
-    }
+    ]
 }

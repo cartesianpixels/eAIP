@@ -257,16 +257,27 @@ async function fetchMetar(icaoCode) {
 
     try {
         const url = `https://aviationweather.gov/api/data/metar?ids=${icaoCode}&format=json`;
-        const response = await axios.get(url, { timeout: 5000 });
+        console.log(`Fetching METAR for ${icaoCode} from ${url}`);
+        const response = await axios.get(url, {
+            timeout: 8000, // Increased timeout
+            headers: { 'User-Agent': 'vAIP-Morocco/1.0 (contact@example.com)' }
+        });
+
         const data = response.data && response.data.length > 0 ? response.data[0] : null;
 
         if (data) {
+            console.log(`✓ METAR fetched for ${icaoCode}`);
             cache.set(cacheKey, data, 300); // Cache for 5 minutes
+        } else {
+            console.warn(`! No METAR data found for ${icaoCode}`);
         }
         return data;
     } catch (error) {
-        console.error(`Error fetching METAR for ${icaoCode}:`, error.message);
-        return null; // Return null on error so frontend handles it
+        console.error(`✗ Error fetching METAR for ${icaoCode}:`, error.message);
+        if (error.response) {
+            console.error(`Status: ${error.response.status}, Data: ${JSON.stringify(error.response.data)}`);
+        }
+        return null;
     }
 }
 

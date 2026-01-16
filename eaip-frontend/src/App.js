@@ -1,5 +1,5 @@
 // src/App.js
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import axios from 'axios';
 import './App.css';
 import Map from './components/Map';
@@ -18,11 +18,7 @@ function App() {
   const API_URL = process.env.REACT_APP_API_URL || (process.env.NODE_ENV === 'production' ? '' : 'http://localhost:3001');
 
   // Fetch all airports on component mount
-  useEffect(() => {
-    fetchAirports();
-  }, []);
-
-  const fetchAirports = async () => {
+  const fetchAirports = useCallback(async () => {
     try {
       setLoading(true);
       setError(null);
@@ -44,7 +40,11 @@ function App() {
     } finally {
       setLoading(false);
     }
-  };
+  }, [API_URL]);
+
+  useEffect(() => {
+    fetchAirports();
+  }, [fetchAirports]);
 
   // Filter airports by search term
   const filteredAirports = airports.filter(airport => {

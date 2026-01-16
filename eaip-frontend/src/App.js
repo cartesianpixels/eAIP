@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import axios from 'axios';
 import './App.css';
+import logo from './logo.svg';
 import Map from './components/Map';
 import AirportPanel from './components/AirportPanel';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -81,7 +82,7 @@ function App() {
       {/* Header */}
       <header className="app-header">
         <div className="header-content">
-          <h1><FontAwesomeIcon icon={faPlane} /> vAIP Morocco</h1>
+          <h1><img src={logo} alt="vAIP Logo" className="header-logo" /> vAIP Morocco</h1>
           <p>Interactive Aeronautical Information Publication</p>
         </div>
 

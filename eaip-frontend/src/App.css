@@ -83,6 +83,15 @@ h6 {
   /* 2.50rem per requirements */
   margin-bottom: 0;
   font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-logo {
+  height: 48px;
+  /* Matches font-size roughly */
+  width: auto;
 }
 
 .app-header p {

@@ -1,16 +1,40 @@
 // src/components/AirportPanel.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import './AirportPanel.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTimes, faLightbulb, faCheck, faGlobe, faBook, faMap, faBroadcastTower } from '@fortawesome/free-solid-svg-icons';
+import { faTimes, faLightbulb, faCheck, faGlobe, faBook, faMap, faBroadcastTower, faCloudSun } from '@fortawesome/free-solid-svg-icons';
 import ondaCharts from '../data/onda-charts.json';
 import missingAirports from '../data/missing-airports.json'; // your manual fallback JSON
 
 function AirportPanel({ airport: rawAirport, onClose, darkMode }) {
-  const [activeTab, setActiveTab] = useState('overview');
-
-  // Merge fallback airport data
+  // Merge fallback airport data FIRST so it's available for hooks
   const airport = { ...missingAirports[rawAirport.icao], ...rawAirport };
+
+  const [activeTab, setActiveTab] = useState('overview');
+  const [metar, setMetar] = useState(null);
+  const [metarLoading, setMetarLoading] = useState(false);
+
+  // Fetch METAR immediately when airport changes
+  useEffect(() => {
+    const fetchMetar = async () => {
+      setMetarLoading(true);
+      try {
+        // Use relative path for production (Vercel) or localhost for dev. 
+        // Vercel rewrites /api/* so we can just use /api/metar/...
+        const API_BASE = process.env.NODE_ENV === 'production' ? '' : 'http://localhost:3001';
+        const response = await axios.get(`${API_BASE}/api/metar/${airport.icao}`);
+        if (response.data.success) {
+          setMetar(response.data.data);
+        }
+      } catch (err) {
+        console.error('Failed to fetch METAR', err);
+      } finally {
+        setMetarLoading(false);
+      }
+    };
+    fetchMetar();
+  }, [airport.icao]);
 
   const getAirportTypeLabel = (type) => {
     const types = {
@@ -38,6 +62,27 @@ function AirportPanel({ airport: rawAirport, onClose, darkMode }) {
         <div className="header-title">
           <h2>{airport.icao}</h2>
           {airport.iata && <span className="iata-badge">{airport.iata}</span>}
+
+          {/* METAR Display in Header */}
+          <div className="header-metar">
+            {metarLoading ? (
+              <small>Loading weather...</small>
+            ) : metar ? (
+              <div className="mini-weather">
+                <div className="weather-top-row">
+                  <span className={`flight-category-dot ${metar.flightCategory || 'UNKNOWN'}`} title={`Flight Category: ${metar.flightCategory}`}>● {metar.flightCategory || 'VFR'}</span>
+                  <span className="weather-summary">
+                    {metar.temp}°C {metar.altim}hPa
+                  </span>
+                </div>
+                <div className="raw-metar-ticker" title={metar.rawOb}>
+                  {metar.rawOb}
+                </div>
+              </div>
+            ) : (
+              <small className="no-weather">Weather data unavailable</small>
+            )}
+          </div>
         </div>
         <button className="close-btn u-btn" aria-label="Close panel" onClick={onClose}>
           <FontAwesomeIcon icon={faTimes} />
@@ -131,9 +176,20 @@ function AirportPanel({ airport: rawAirport, onClose, darkMode }) {
                     rel="noopener noreferrer"
                     className="external-link"
                   >
-                    <FontAwesomeIcon icon={faGlobe} fixedWidth /> Official Website
+                    <FontAwesomeIcon icon={faGlobe} fixedWidth /> Website
                   </a>
                 )}
+              </div>
+            )}
+
+            {/* Full METAR Details (Optional expansion) */}
+            {metar && (
+              <div className="metar-details-section">
+                <h4>Current Weather</h4>
+                <div className="metar-decoded-grid">
+                  <div><strong>Wind:</strong> {metar.wdir ? `${metar.wdir}°` : 'Vrbl'} at {metar.wspd || 0} kts</div>
+                  <div><strong>Vis:</strong> {metar.visib || '10+'} SM</div>
+                </div>
               </div>
             )}
           </div>

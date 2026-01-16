@@ -244,6 +244,41 @@ app.get('/api/debug', (req, res) => {
     });
 });
 
+/**
+ * Fetch METAR data from Aviation Weather Center
+ */
+async function fetchMetar(icaoCode) {
+    // Check cache first (short TTL for weather)
+    const cacheKey = `metar_${icaoCode}`;
+    const cached = cache.get(cacheKey);
+    if (cached) {
+        return cached;
+    }
+
+    try {
+        const url = `https://aviationweather.gov/api/data/metar?ids=${icaoCode}&format=json`;
+        const response = await axios.get(url, { timeout: 5000 });
+        const data = response.data && response.data.length > 0 ? response.data[0] : null;
+
+        if (data) {
+            cache.set(cacheKey, data, 300); // Cache for 5 minutes
+        }
+        return data;
+    } catch (error) {
+        console.error(`Error fetching METAR for ${icaoCode}:`, error.message);
+        return null; // Return null on error so frontend handles it
+    }
+}
+
+app.get('/api/metar/:icao', async (req, res) => {
+    try {
+        const data = await fetchMetar(req.params.icao);
+        res.json({ success: true, data });
+    } catch (error) {
+        res.status(500).json({ success: false, error: error.message });
+    }
+});
+
 app.post('/api/cache/clear', (req, res) => {
     cache.flushAll();
     res.json({ success: true, message: 'Cache cleared' });

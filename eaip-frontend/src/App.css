@@ -181,7 +181,8 @@ h6 {
 
 /* ===== ERROR BANNER ===== */
 .simulation-banner {
-  background-color: #ffcc00; /* Warning Yellow */
+  background-color: #ffcc00;
+  /* Warning Yellow */
   color: #000;
   text-align: center;
   font-weight: bold;

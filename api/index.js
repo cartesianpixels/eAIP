@@ -173,6 +173,23 @@ async function fetchAirportRunways(icaoCode) {
         return enrichedData;
 
     } catch (error) {
+        // Redundant fallback: Check backup-airports.json
+        try {
+            // Lazy load backup file to avoid header bloat involved with requiring large JSONs unconditionally
+            // However, for Vercel, static imports are better. Let's rely on a static require determined at top or here.
+            // Since we want to update the file, we can require it at the top.
+            const BACKUP_AIRPORTS = require('./utils/backup-airports.json');
+
+            if (BACKUP_AIRPORTS[icaoCode]) {
+                console.warn(`! API Error for ${icaoCode}. Using local BACKUP data.`);
+                const backupData = BACKUP_AIRPORTS[icaoCode];
+                cache.set(icaoCode, backupData);
+                return backupData;
+            }
+        } catch (backupError) {
+            console.error('Backup lookup failed:', backupError.message);
+        }
+
         console.error(`✗ Error fetching ${icaoCode}:`, error.message);
         return {
             icao: icaoCode,

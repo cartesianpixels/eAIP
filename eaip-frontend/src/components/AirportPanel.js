@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './AirportPanel.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTimes, faLightbulb, faCheck, faGlobe, faBook, faMap, faBroadcastTower, faCloudSun } from '@fortawesome/free-solid-svg-icons';
+import { faTimes, faLightbulb, faCheck, faGlobe, faBook, faMap, faBroadcastTower } from '@fortawesome/free-solid-svg-icons';
 import ondaCharts from '../data/onda-charts.json';
 import missingAirports from '../data/missing-airports.json'; // your manual fallback JSON
 

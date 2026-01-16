@@ -26,10 +26,10 @@ const AIRPORT_DB_URL = 'https://airportdb.io/api/v1/airport';
 
 // Morocco (MA) and Southern Territories (EH) ICAO codes
 const MOROCCAN_AIRPORTS = [
-  'GMMN','GMMX','GMFF','GMTT','GMAD','GMME','GMFO','GMMZ','GMMI','GMMW',
-  'GMTA','GMFK','GMAT','GMTN','GMMY','GMMD','GMFB','GMFM','GMMB','GMAG',
-  'GMFI','GMSL','GMAZ','GMFA','GMMO','GMFZ','GMAA','GMMT',
-  'GMML','GMMH','GMMA'
+  'GMMN', 'GMMX', 'GMFF', 'GMTT', 'GMAD', 'GMME', 'GMFO', 'GMMZ', 'GMMI', 'GMMW',
+  'GMTA', 'GMFK', 'GMAT', 'GMTN', 'GMMY', 'GMMD', 'GMFB', 'GMFM', 'GMMB', 'GMAG',
+  'GMFI', 'GMSL', 'GMAZ', 'GMFA', 'GMMO', 'GMFZ', 'GMAA', 'GMMT',
+  'GMML', 'GMMH', 'GMMA'
 ];
 
 /**
@@ -109,7 +109,7 @@ async function fetchAirportRunways(icaoCode) {
   // Fetch from AirportDB API
   try {
     const url = `${AIRPORT_DB_URL}/${icaoCode}?apiToken=${AIRPORT_DB_TOKEN}`;
-    const response = await axios.get(url, { timeout: 15000, headers: { 'User-Agent': 'eAIP-Morocco/1.0' } });
+    const response = await axios.get(url, { timeout: 15000, headers: { 'User-Agent': 'vAIP-Morocco/1.0' } });
     const airportData = response.data;
 
     // Extract runways
@@ -250,7 +250,7 @@ app.use((err, req, res, next) => {
 // Start server
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
-  console.log(`\n🛫 eAIP Morocco Airport Service`);
+  console.log(`\n🛫 vAIP Morocco Airport Service`);
   console.log(`Server running on http://localhost:${PORT}`);
   console.log(`Available endpoints:`);
   console.log(`  GET  /api/airport/:icao`);

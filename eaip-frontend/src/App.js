@@ -74,10 +74,14 @@ function App() {
 
   return (
     <div className={`app ${darkMode ? 'dark-mode' : 'light-mode'}`}>
+      <div className="simulation-banner">
+        ⚠️ FOR FLIGHT SIMULATION USE ONLY. NOT FOR REAL WORLD NAVIGATION. ⚠️
+      </div>
+
       {/* Header */}
       <header className="app-header">
         <div className="header-content">
-          <h1><FontAwesomeIcon icon={faPlane} /> eAIP Morocco</h1>
+          <h1><FontAwesomeIcon icon={faPlane} /> vAIP Morocco</h1>
           <p>Interactive Aeronautical Information Publication</p>
         </div>
 
@@ -158,7 +162,7 @@ function App() {
 
       {/* Footer */}
       <footer className="app-footer">
-        <p>© 2025 IVAO Morocco | eAIP v1.0 | {airports.length} Airports | Data from AirportDB.io</p>
+        <p>© 2025 IVAO Morocco | vAIP v1.0 | {airports.length} Airports | Data from AirportDB.io</p>
       </footer>
     </div>
   );

@@ -111,7 +111,7 @@ async function fetchAirportRunways(icaoCode) {
     // Fetch from AirportDB API
     try {
         const url = `${AIRPORT_DB_URL}/${icaoCode}?apiToken=${AIRPORT_DB_TOKEN}`;
-        const response = await axios.get(url, { timeout: 15000, headers: { 'User-Agent': 'eAIP-Morocco/1.0' } });
+        const response = await axios.get(url, { timeout: 15000, headers: { 'User-Agent': 'vAIP-Morocco/1.0' } });
         const airportData = response.data;
 
         // Extract runways
@@ -264,7 +264,7 @@ if (process.env.NODE_ENV !== 'production') {
     // Only listen if this file is run directly
     if (require.main === module) {
         app.listen(PORT, () => {
-            console.log(`\n🛫 eAIP Morocco Airport Service (Local)`);
+            console.log(`\n🛫 vAIP Morocco Airport Service (Local)`);
             console.log(`Server running on http://localhost:${PORT}`);
         });
     }

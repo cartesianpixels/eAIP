@@ -6,7 +6,7 @@ import logo from './logo.svg';
 import Map from './components/Map';
 import AirportPanel from './components/AirportPanel';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faSun, faMoon, faSync, faPlane } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faSun, faMoon, faSync } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
   const [airports, setAirports] = useState([]);

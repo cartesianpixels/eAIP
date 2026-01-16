@@ -89,7 +89,7 @@ h6 {
 }
 
 .header-logo {
-  height: 48px;
+  height: 2rem;
   /* Matches font-size roughly */
   width: auto;
 }

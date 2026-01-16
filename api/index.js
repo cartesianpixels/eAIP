@@ -7,8 +7,8 @@ const axios = require('axios');
 const NodeCache = require('node-cache');
 const dotenv = require('dotenv');
 const cors = require('cors');
-const path = require('path');
-const MISSING_AIRPORTS = require(path.join(__dirname, 'utils', 'missing-airports.json'));
+// Static require ensures Vercel/NFT bundles the file correctly
+const MISSING_AIRPORTS = require('./utils/missing-airports.json');
 
 dotenv.config();
 
@@ -233,6 +233,15 @@ app.get('/api/airports', async (req, res) => {
 
 app.get('/api/health', (req, res) => {
     res.json({ success: true, message: 'Airport service is running', cacheStats: cache.getStats() });
+});
+
+app.get('/api/debug', (req, res) => {
+    res.json({
+        success: true,
+        env: process.env.NODE_ENV,
+        hasToken: !!process.env.AIRPORT_DB_TOKEN,
+        nodeVersion: process.version
+    });
 });
 
 app.post('/api/cache/clear', (req, res) => {

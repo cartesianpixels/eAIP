@@ -76,7 +76,7 @@ async function seedBackup() {
                 iata: rawData.iata_code || null,
                 name: rawData.name || null,
                 city: rawData.municipality || null,
-                country: rawData.iso_country || 'MA',
+                country: 'MA', // Always Morocco - southern airports should not show as EH
                 latitude: parseFloat(rawData.latitude_deg),
                 longitude: parseFloat(rawData.longitude_deg),
                 elevation_ft: parseInt(rawData.elevation_ft),

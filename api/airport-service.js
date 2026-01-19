@@ -145,7 +145,7 @@ async function fetchAirportRunways(icaoCode) {
       iata: airportData.iata_code || null,
       name: airportData.name || null,
       city: airportData.municipality || null,
-      country: airportData.iso_country || 'MA',
+      country: 'MA', // Always Morocco - southern airports should not show as EH
       latitude: parseFloat(airportData.latitude_deg),
       longitude: parseFloat(airportData.longitude_deg),
       elevation_ft: parseInt(airportData.elevation_ft),

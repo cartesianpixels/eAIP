@@ -7,6 +7,7 @@ import Map from './components/Map';
 import AirportPanel from './components/AirportPanel';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faSun, faMoon, faSync } from '@fortawesome/free-solid-svg-icons';
+import ivaoService from './services/IvaoService';
 
 function App() {
   const [airports, setAirports] = useState([]);
@@ -15,6 +16,8 @@ function App() {
   const [error, setError] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
   const [darkMode, setDarkMode] = useState(false);
+  const [ivaoStatus, setIvaoStatus] = useState(null);
+  const [firBoundary, setFirBoundary] = useState(null);
 
   const API_URL = process.env.REACT_APP_API_URL || (process.env.NODE_ENV === 'production' ? '' : 'http://localhost:3001');
 
@@ -46,6 +49,39 @@ function App() {
   useEffect(() => {
     fetchAirports();
   }, [fetchAirports]);
+
+  // Initialize IVAO service and fetch FIR boundary
+  useEffect(() => {
+    // Start IVAO polling
+    ivaoService.startPolling();
+
+    // Subscribe to status changes
+    const unsubscribe = ivaoService.subscribe((status) => {
+      console.log('IVAO status update:', status);
+      setIvaoStatus(status);
+    });
+
+    // Fetch Casablanca FIR boundary
+    const fetchFIRBoundary = async () => {
+      try {
+        const response = await axios.get(`${API_URL}/api/airspace/fir/casablanca`);
+        if (response.data.success) {
+          setFirBoundary(response.data.data);
+          console.log('Loaded Casablanca FIR boundary');
+        }
+      } catch (err) {
+        console.error('Error fetching FIR boundary:', err);
+      }
+    };
+
+    fetchFIRBoundary();
+
+    // Cleanup on unmount
+    return () => {
+      ivaoService.stopPolling();
+      unsubscribe();
+    };
+  }, [API_URL]);
 
   // Filter airports by search term
   const filteredAirports = airports.filter(airport => {
@@ -147,6 +183,8 @@ function App() {
               selectedAirport={selectedAirport}
               onAirportSelect={handleAirportSelect}
               darkMode={darkMode}
+              firBoundary={firBoundary}
+              showFIR={ivaoStatus?.online || false}
             />
 
             {/* Airport Info Panel */}

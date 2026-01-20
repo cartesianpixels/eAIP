@@ -9,6 +9,9 @@ const dotenv = require('dotenv');
 const cors = require('cors');
 // Static require ensures Vercel/NFT bundles the file correctly
 const MISSING_AIRPORTS = require('./utils/missing-airports.json');
+const ivaoService = require('./utils/ivao-service');
+const openAipService = require('./utils/openaip-service');
+
 
 dotenv.config();
 
@@ -243,6 +246,57 @@ app.get('/api/airports', async (req, res) => {
     try {
         const airports = await fetchAllAirports();
         res.json({ success: true, count: airports.length, data: airports });
+    } catch (error) {
+        res.status(500).json({ success: false, error: error.message });
+    }
+});
+
+// IVAO API Endpoints
+app.get('/api/ivao/gmmm-ctr', async (req, res) => {
+    try {
+        const status = await ivaoService.getGMMMCTRStatus();
+        res.json({ success: true, data: status });
+    } catch (error) {
+        res.status(500).json({ success: false, error: error.message });
+    }
+});
+
+app.get('/api/ivao/controllers', async (req, res) => {
+    try {
+        const controllers = await ivaoService.getMoroccanControllers();
+        res.json({ success: true, count: controllers.length, data: controllers });
+    } catch (error) {
+        res.status(500).json({ success: false, error: error.message });
+    }
+});
+
+// Airspace API Endpoints
+app.get('/api/airspace/morocco', async (req, res) => {
+    try {
+        const airspaces = await openAipService.getMoroccoAirspace();
+        res.json({ success: true, count: airspaces.length, data: airspaces });
+    } catch (error) {
+        res.status(500).json({ success: false, error: error.message });
+    }
+});
+
+app.get('/api/airspace/fir', async (req, res) => {
+    try {
+        const firs = await openAipService.getFIRBoundaries();
+        res.json({ success: true, count: firs.length, data: firs });
+    } catch (error) {
+        res.status(500).json({ success: false, error: error.message });
+    }
+});
+
+app.get('/api/airspace/fir/casablanca', async (req, res) => {
+    try {
+        const fir = await openAipService.getCasablancaFIR();
+        if (fir) {
+            res.json({ success: true, data: fir });
+        } else {
+            res.status(404).json({ success: false, error: 'Casablanca FIR not found' });
+        }
     } catch (error) {
         res.status(500).json({ success: false, error: error.message });
     }

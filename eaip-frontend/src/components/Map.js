@@ -15,10 +15,11 @@ L.Icon.Default.mergeOptions({
   shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
 });
 
-function Map({ airports, selectedAirport, onAirportSelect, darkMode }) {
+function Map({ airports, selectedAirport, onAirportSelect, darkMode, firBoundary, showFIR }) {
   const mapContainer = useRef(null);
   const map = useRef(null);
   const markersRef = useRef({});
+  const firLayerRef = useRef(null);
 
   // Initialize map
   useEffect(() => {
@@ -131,6 +132,43 @@ function Map({ airports, selectedAirport, onAirportSelect, darkMode }) {
       marker.openPopup();
     }
   }, [selectedAirport]);
+
+  // Add/remove FIR boundary based on IVAO status
+  useEffect(() => {
+    if (!map.current || !firBoundary) return;
+
+    // Remove existing FIR layer if it exists
+    if (firLayerRef.current) {
+      map.current.removeLayer(firLayerRef.current);
+      firLayerRef.current = null;
+    }
+
+    // Add FIR boundary if controller is online
+    if (showFIR && firBoundary.geometry) {
+      const firLayer = L.geoJSON(firBoundary.geometry, {
+        style: {
+          color: '#0D2C99', // IVAO Dark Blue
+          weight: 3,
+          opacity: 0.8,
+          fillColor: '#3C55AC', // IVAO Light Blue
+          fillOpacity: 0.1,
+          dashArray: '10, 10'
+        }
+      }).bindPopup(`
+        <div class="fir-popup">
+          <strong>${firBoundary.name}</strong><br>
+          <small>Upper: ${firBoundary.upperLimit?.value} ${firBoundary.upperLimit?.unit === 1 ? 'ft' : 'FL'}</small><br>
+          <small>Lower: ${firBoundary.lowerLimit?.value} ${firBoundary.lowerLimit?.unit === 1 ? 'ft' : 'FL'}</small><br>
+          <small>Frequency: ${firBoundary.frequencies?.[0]?.value || 'N/A'} MHz</small>
+        </div>
+      `).addTo(map.current);
+
+      firLayerRef.current = firLayer;
+      console.log('FIR boundary displayed');
+    } else {
+      console.log('FIR boundary hidden');
+    }
+  }, [firBoundary, showFIR]);
 
   return (
     <div className="map-container">

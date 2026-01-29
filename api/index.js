@@ -10,7 +10,7 @@ const cors = require('cors');
 // Static require ensures Vercel/NFT bundles the file correctly
 const MISSING_AIRPORTS = require('./utils/missing-airports.json');
 const ivaoService = require('./utils/ivao-service');
-const openAipService = require('./utils/openaip-service');
+
 
 
 dotenv.config();
@@ -270,33 +270,127 @@ app.get('/api/ivao/controllers', async (req, res) => {
     }
 });
 
-// Airspace API Endpoints
-app.get('/api/airspace/morocco', async (req, res) => {
-    try {
-        const airspaces = await openAipService.getMoroccoAirspace();
-        res.json({ success: true, count: airspaces.length, data: airspaces });
-    } catch (error) {
-        res.status(500).json({ success: false, error: error.message });
-    }
-});
+// Mock Flight Data Generator
+function generateMockFlights(icao) {
+    const airlines = [
+        { codeIATA: 'AT', codeICAO: 'RAM', name: 'Royal Air Maroc' },
+        { codeIATA: '3O', codeICAO: 'MAC', name: 'Air Arabia Maroc' },
+        { codeIATA: 'FR', codeICAO: 'RYR', name: 'Ryanair' },
+        { codeIATA: 'TO', codeICAO: 'TVF', name: 'Transavia' },
+        { codeIATA: 'AF', codeICAO: 'AFR', name: 'Air France' }
+    ];
 
-app.get('/api/airspace/fir', async (req, res) => {
-    try {
-        const firs = await openAipService.getFIRBoundaries();
-        res.json({ success: true, count: firs.length, data: firs });
-    } catch (error) {
-        res.status(500).json({ success: false, error: error.message });
-    }
-});
+    const destinations = [
+        { icao: 'LFPG', iata: 'CDG', name: 'Paris Charles de Gaulle' },
+        { icao: 'LFPO', iata: 'ORY', name: 'Paris Orly' },
+        { icao: 'LEMD', iata: 'MAD', name: 'Madrid Barajas' },
+        { icao: 'LEBL', iata: 'BCN', name: 'Barcelona El Prat' },
+        { icao: 'EGLL', iata: 'LHR', name: 'London Heathrow' },
+        { icao: 'EHAM', iata: 'AMS', name: 'Amsterdam Schiphol' },
+        { icao: 'OMDB', iata: 'DXB', name: 'Dubai Int\'l' },
+        { icao: 'KJFK', iata: 'JFK', name: 'New York JFK' }
+    ];
 
-app.get('/api/airspace/fir/casablanca', async (req, res) => {
+    const flights = [];
+    const now = new Date();
+
+    // Generate 5-10 flights
+    const numFlights = 5 + Math.floor(Math.random() * 6);
+
+    for (let i = 0; i < numFlights; i++) {
+        const airline = airlines[Math.floor(Math.random() * airlines.length)];
+        const dest = destinations[Math.floor(Math.random() * destinations.length)];
+        const flightNum = 100 + Math.floor(Math.random() * 899);
+
+        // Departure time between now - 1 hour and now + 8 hours
+        const depTime = new Date(now.getTime() + (Math.random() * 9 * 60 * 60 * 1000) - (1 * 60 * 60 * 1000));
+        const durationMins = 90 + Math.floor(Math.random() * 180);
+        const arrTime = new Date(depTime.getTime() + durationMins * 60000);
+
+        let status = 'scheduled';
+        const minutesUntilDep = (depTime - now) / 60000;
+
+        if (minutesUntilDep < -10) status = 'departed';
+        else if (minutesUntilDep < 30) status = 'boarding';
+        else if (minutesUntilDep < 0) status = 'closed';
+
+        flights.push({
+            id: `${icao}-${i}-${Date.now()}`,
+            flightNumber: `${airline.codeIATA} ${flightNum}`,
+            callsignIATA: `${airline.codeIATA}${flightNum}`,
+            callsignICAO: `${airline.codeICAO}${flightNum}`,
+            airline: {
+                codeIATA: airline.codeIATA,
+                codeICAO: airline.codeICAO,
+                name: airline.name,
+                logoUrl: null // Placeholder
+            },
+            origin: { icao: icao, iata: 'XXX', name: 'Origin Airport' }, // In a real app we'd look this up
+            destination: dest,
+            departure: {
+                scheduled: depTime.toISOString()
+            },
+            arrival: {
+                scheduled: arrTime.toISOString()
+            },
+            aircraft: {
+                type: Math.random() > 0.5 ? 'B738' : 'A320',
+                wakeTurbulence: 'M'
+            },
+            status: status,
+            route: 'DCT',
+            distance: Math.floor(Math.random() * 1000) + 200
+        });
+    }
+
+    return flights.sort((a, b) => new Date(a.departure.scheduled) - new Date(b.departure.scheduled));
+}
+
+// Flight API Endpoints
+app.get('/api/flights/:icao', (req, res) => {
     try {
-        const fir = await openAipService.getCasablancaFIR();
-        if (fir) {
-            res.json({ success: true, data: fir });
-        } else {
-            res.status(404).json({ success: false, error: 'Casablanca FIR not found' });
+        const { icao } = req.params;
+        const upperIcao = icao.toUpperCase();
+
+        // 1. Try to load from local JSON file
+        try {
+            // Note: In Vercel, we need to be careful with dynamic paths, but for local this works fine.
+            // For production/Vercel, we might need to pre-load these or use path.join with __dirname
+            const schedulePath = `./data/schedules/${upperIcao}.json`;
+            // Check if file exists (sync is fine for startup/low load prototype)
+            // But we'll try-catch the require/read
+            const flightData = require(schedulePath);
+
+            // Adjust dates to be today/tomorrow relative to now so data doesn't go stale
+            const today = new Date();
+            const adjustedFlights = flightData.map((f, index) => {
+                // Simple logic: Keep time, update date to today or tomorrow
+                const originalDep = new Date(f.departure.scheduled);
+                const newDep = new Date(today);
+                newDep.setHours(originalDep.getHours(), originalDep.getMinutes(), 0, 0);
+
+                // If original was heavily in future, maybe push to tomorrow
+                // For now, let's just make them relative to "today" + random offset to spread them out?
+                // Actually, USER will provide valid ISO strings ideally.
+                // BUT, to make life easy, let's trust the user provided recent dates OR
+                // if the dates are old, we might want to auto-bump them. 
+                // Let's just return raw data for now, user said "I'll fill them".
+                return {
+                    ...f,
+                    id: `${upperIcao}-MANUAL-${index}`
+                };
+            });
+
+            console.log(`✓ Serving manual schedule for ${upperIcao}`);
+            return res.json({ success: true, source: 'manual', data: adjustedFlights });
+
+        } catch (fileErr) {
+            // File not found or invalid, fall back to generator
+            // console.warn(`No manual schedule for ${upperIcao}, using generator.`);
         }
+
+        const flights = generateMockFlights(upperIcao);
+        res.json({ success: true, source: 'generated', data: flights });
     } catch (error) {
         res.status(500).json({ success: false, error: error.message });
     }

@@ -1,0 +1,66 @@
+[
+    {
+        "flightNumber": "AT 401",
+        "callsignIATA": "AT401",
+        "callsignICAO": "RAM401",
+        "airline": {
+            "codeIATA": "AT",
+            "codeICAO": "RAM",
+            "name": "Royal Air Maroc"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Casablanca Mohammed V"
+        },
+        "destination": {
+            "icao": "KJFK",
+            "iata": "JFK",
+            "name": "New York JFK"
+        },
+        "departure": {
+            "scheduled": "2026-01-30T10:00:00Z"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T18:00:00Z"
+        },
+        "aircraft": {
+            "type": "B789",
+            "wakeTurbulence": "H"
+        },
+        "status": "scheduled",
+        "distance": 3100
+    },
+    {
+        "flightNumber": "AF 1597",
+        "callsignIATA": "AF1597",
+        "callsignICAO": "AFR1597",
+        "airline": {
+            "codeIATA": "AF",
+            "codeICAO": "AFR",
+            "name": "Air France"
+        },
+        "origin": {
+            "icao": "LFPG",
+            "iata": "CDG",
+            "name": "Paris Charles de Gaulle"
+        },
+        "destination": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Casablanca Mohammed V"
+        },
+        "departure": {
+            "scheduled": "2026-01-30T09:00:00Z"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T12:00:00Z"
+        },
+        "aircraft": {
+            "type": "A321",
+            "wakeTurbulence": "M"
+        },
+        "status": "scheduled",
+        "distance": 1200
+    }
+]

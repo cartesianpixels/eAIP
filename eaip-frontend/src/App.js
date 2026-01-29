@@ -2,22 +2,25 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import axios from 'axios';
 import './App.css';
-import logo from './logo.svg';
+import logo from './MA.png';
 import Map from './components/Map';
 import AirportPanel from './components/AirportPanel';
+import FlightOpsPanel from './components/FlightOpsPanel';
+import LandingScreen from './components/LandingScreen';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faSun, faMoon, faSync } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faSun, faMoon, faSync, faHome } from '@fortawesome/free-solid-svg-icons';
 import ivaoService from './services/IvaoService';
 
 function App() {
   const [airports, setAirports] = useState([]);
   const [selectedAirport, setSelectedAirport] = useState(null);
+  const [appMode, setAppMode] = useState(null); // 'vaip' or 'realops'
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
   const [darkMode, setDarkMode] = useState(false);
   const [ivaoStatus, setIvaoStatus] = useState(null);
-  const [firBoundary, setFirBoundary] = useState(null);
+
 
   const API_URL = process.env.REACT_APP_API_URL || (process.env.NODE_ENV === 'production' ? '' : 'http://localhost:3001');
 
@@ -53,33 +56,20 @@ function App() {
   // Initialize IVAO service and fetch FIR boundary
   useEffect(() => {
     // Start IVAO polling
-    ivaoService.startPolling();
+    // ivaoService.startPolling();
 
     // Subscribe to status changes
-    const unsubscribe = ivaoService.subscribe((status) => {
-      console.log('IVAO status update:', status);
-      setIvaoStatus(status);
-    });
+    // const unsubscribe = ivaoService.subscribe((status) => {
+    //   console.log('IVAO status update:', status);
+    //   setIvaoStatus(status);
+    // });
 
-    // Fetch Casablanca FIR boundary
-    const fetchFIRBoundary = async () => {
-      try {
-        const response = await axios.get(`${API_URL}/api/airspace/fir/casablanca`);
-        if (response.data.success) {
-          setFirBoundary(response.data.data);
-          console.log('Loaded Casablanca FIR boundary');
-        }
-      } catch (err) {
-        console.error('Error fetching FIR boundary:', err);
-      }
-    };
 
-    fetchFIRBoundary();
 
     // Cleanup on unmount
     return () => {
-      ivaoService.stopPolling();
-      unsubscribe();
+      // ivaoService.stopPolling();
+      // unsubscribe();
     };
   }, [API_URL]);
 
@@ -109,15 +99,31 @@ function App() {
     setDarkMode(!darkMode);
   };
 
+  const handleModeSelect = (mode) => {
+    setAppMode(mode);
+  };
+
+  const handleBackToLanding = () => {
+    setAppMode(null);
+    setSelectedAirport(null);
+  };
+
+  if (!appMode) {
+    return <LandingScreen onSelectMode={handleModeSelect} />;
+  }
+
   return (
     <div className={`app ${darkMode ? 'dark-mode' : 'light-mode'}`}>
       <div className="simulation-banner">
-        ⚠️ FOR FLIGHT SIMULATION USE ONLY. NOT FOR REAL WORLD NAVIGATION. ⚠️
+        For simulation use only – Not approved for real-world navigation
       </div>
 
       {/* Header */}
       <header className="app-header">
-        <div className="header-content">
+        <div className="header-content" onClick={handleBackToLanding} style={{ cursor: 'pointer' }}>
+          <button className="home-btn" onClick={(e) => { e.stopPropagation(); handleBackToLanding(); }} title="Back to Home">
+            <FontAwesomeIcon icon={faHome} />
+          </button>
           <h1><img src={logo} alt="vAIP Logo" className="header-logo" /> vAIP Morocco</h1>
           <p>Interactive Aeronautical Information Publication</p>
         </div>
@@ -183,17 +189,25 @@ function App() {
               selectedAirport={selectedAirport}
               onAirportSelect={handleAirportSelect}
               darkMode={darkMode}
-              firBoundary={firBoundary}
-              showFIR={ivaoStatus?.online || false}
+
+              showFIR={false}
             />
 
-            {/* Airport Info Panel */}
+            {/* Airport Info Panel - Render based on Mode */}
             {selectedAirport && (
-              <AirportPanel
-                airport={selectedAirport}
-                onClose={handleClosePanel}
-                darkMode={darkMode}
-              />
+              appMode === 'realops' ? (
+                <FlightOpsPanel
+                  airport={selectedAirport}
+                  onClose={handleClosePanel}
+                  darkMode={darkMode}
+                />
+              ) : (
+                <AirportPanel
+                  airport={selectedAirport}
+                  onClose={handleClosePanel}
+                  darkMode={darkMode}
+                />
+              )
             )}
           </div>
         )}

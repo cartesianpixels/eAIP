@@ -2,9 +2,6 @@
 import React, { useEffect, useRef } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import { renderToStaticMarkup } from 'react-dom/server';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircle, faPlane } from '@fortawesome/free-solid-svg-icons';
 import './Map.css';
 
 // Fix Leaflet icon issue
@@ -15,11 +12,10 @@ L.Icon.Default.mergeOptions({
   shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
 });
 
-function Map({ airports, selectedAirport, onAirportSelect, darkMode, firBoundary, showFIR }) {
+function Map({ airports, selectedAirport, onAirportSelect, darkMode }) {
   const mapContainer = useRef(null);
   const map = useRef(null);
   const markersRef = useRef({});
-  const firLayerRef = useRef(null);
 
   // Initialize map
   useEffect(() => {
@@ -73,18 +69,14 @@ function Map({ airports, selectedAirport, onAirportSelect, darkMode, firBoundary
 
       const isSelected = selectedAirport?.icao === airport.icao;
 
-      // Create custom icon
-      const markerColor = isSelected ? '#E93434' : // Red for selected
-        airport.type === 'large_airport' ? '#0D2C99' : // IVAO Dark Blue
-          airport.type === 'medium_airport' ? '#3C55AC' : // IVAO Light Blue
-            '#D7D7DC'; // Accent Grey for small
+      // Determine airport size class
+      const sizeClass = airport.type === 'large_airport' ? 'large' :
+        airport.type === 'medium_airport' ? 'medium' : 'small';
 
       const markerIcon = L.divIcon({
         className: `custom-marker ${isSelected ? 'selected' : ''}`,
         html: `
-          <div class="marker-dot" style="background-color: ${markerColor}; color: white;">
-            ${renderToStaticMarkup(<FontAwesomeIcon icon={faPlane} style={{ fontSize: '14px' }} />)}
-          </div>
+          <div class="marker-dot ${sizeClass}"></div>
         `,
         iconSize: [34, 34],
         iconAnchor: [17, 17],
@@ -134,41 +126,7 @@ function Map({ airports, selectedAirport, onAirportSelect, darkMode, firBoundary
   }, [selectedAirport]);
 
   // Add/remove FIR boundary based on IVAO status
-  useEffect(() => {
-    if (!map.current || !firBoundary) return;
 
-    // Remove existing FIR layer if it exists
-    if (firLayerRef.current) {
-      map.current.removeLayer(firLayerRef.current);
-      firLayerRef.current = null;
-    }
-
-    // Add FIR boundary if controller is online
-    if (showFIR && firBoundary.geometry) {
-      const firLayer = L.geoJSON(firBoundary.geometry, {
-        style: {
-          color: '#0D2C99', // IVAO Dark Blue
-          weight: 3,
-          opacity: 0.8,
-          fillColor: '#3C55AC', // IVAO Light Blue
-          fillOpacity: 0.1,
-          dashArray: '10, 10'
-        }
-      }).bindPopup(`
-        <div class="fir-popup">
-          <strong>${firBoundary.name}</strong><br>
-          <small>Upper: ${firBoundary.upperLimit?.value} ${firBoundary.upperLimit?.unit === 1 ? 'ft' : 'FL'}</small><br>
-          <small>Lower: ${firBoundary.lowerLimit?.value} ${firBoundary.lowerLimit?.unit === 1 ? 'ft' : 'FL'}</small><br>
-          <small>Frequency: ${firBoundary.frequencies?.[0]?.value || 'N/A'} MHz</small>
-        </div>
-      `).addTo(map.current);
-
-      firLayerRef.current = firLayer;
-      console.log('FIR boundary displayed');
-    } else {
-      console.log('FIR boundary hidden');
-    }
-  }, [firBoundary, showFIR]);
 
   return (
     <div className="map-container">
@@ -178,19 +136,19 @@ function Map({ airports, selectedAirport, onAirportSelect, darkMode, firBoundary
       <div className="map-legend">
         <h4>Airport Types</h4>
         <div className="legend-item">
-          <div className="legend-icon" style={{ color: '#0D2C99' }}><FontAwesomeIcon icon={faCircle} /></div>
+          <div className="legend-icon large"></div>
           <span>Large Airport</span>
         </div>
         <div className="legend-item">
-          <div className="legend-icon" style={{ color: '#3C55AC' }}><FontAwesomeIcon icon={faCircle} /></div>
+          <div className="legend-icon medium"></div>
           <span>Medium Airport</span>
         </div>
         <div className="legend-item">
-          <div className="legend-icon" style={{ color: '#D7D7DC' }}><FontAwesomeIcon icon={faCircle} /></div>
+          <div className="legend-icon small"></div>
           <span>Small Airport</span>
         </div>
         <div className="legend-item">
-          <div className="legend-icon" style={{ color: '#E93434' }}><FontAwesomeIcon icon={faCircle} /></div>
+          <div className="legend-icon selected"></div>
           <span>Selected</span>
         </div>
       </div>

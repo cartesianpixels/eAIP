@@ -58,10 +58,18 @@ function AirportPanel({ airport: rawAirport, onClose, darkMode }) {
   return (
     <div className={`airport-panel ${darkMode ? 'dark' : 'light'}`}>
       {/* Header */}
-      <div className="panel-header">
+      <div
+        className="panel-header"
+        style={{
+          backgroundImage: `url(${require('../assets/airport-images/airportpanel.jpg')})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        <div className="header-overlay"></div>
         <div className="header-title">
-          <h2>{airport.icao}</h2>
-          {airport.iata && <span className="iata-badge">{airport.iata}</span>}
+          <h2>{airport.icao}{airport.iata ? `/${airport.iata}` : ''}</h2>
+          {airport.name && <p className="airport-name-subtitle">{airport.name}</p>}
 
           {/* METAR Display in Header */}
           <div className="header-metar">
@@ -292,7 +300,7 @@ function AirportPanel({ airport: rawAirport, onClose, darkMode }) {
           </div>
         )}
       </div>
-    </div>
+    </div >
   );
 }
 

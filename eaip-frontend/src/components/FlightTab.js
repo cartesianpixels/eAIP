@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlaneDeparture, faPlaneArrival, faSync, faBroadcastTower, faPlane, faFileExport, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+import { faPlaneDeparture, faPlaneArrival, faSync, faBroadcastTower, faPlane, faFileExport } from '@fortawesome/free-solid-svg-icons';
 import './FlightTab.css';
 
 const API_BASE = process.env.NODE_ENV === 'production' ? '' : 'http://localhost:3001';
@@ -28,7 +28,7 @@ function FlightTab({ airportCode, simbriefId }) {
     const [filter, setFilter] = useState('departure'); // 'departure', 'arrival'
     const [error, setError] = useState(null);
 
-    const fetchFlights = async () => {
+    const fetchFlights = useCallback(async () => {
         setLoading(true);
         setError(null);
         try {
@@ -44,11 +44,11 @@ function FlightTab({ airportCode, simbriefId }) {
         } finally {
             setLoading(false);
         }
-    };
+    }, [airportCode]);
 
     useEffect(() => {
         fetchFlights();
-    }, [airportCode]);
+    }, [fetchFlights]);
 
     // Format time (HH:MM)
     const formatTime = (isoString) => {
@@ -142,10 +142,10 @@ function FlightTab({ airportCode, simbriefId }) {
                     </div>
                 ) : error ? (
                     <div className="flights-error">{error}</div>
-                ) : flights.length === 0 ? (
+                ) : filteredFlights.length === 0 ? (
                     <div className="flights-empty">No flights scheduled in the next 24 hours.</div>
                 ) : (
-                    flights.map(flight => (
+                    filteredFlights.map(flight => (
                         <div key={flight.id} className="flight-card">
                             <div className="flight-main-info">
                                 <div className="flight-identity">

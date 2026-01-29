@@ -9,7 +9,6 @@ import FlightOpsPanel from './components/FlightOpsPanel';
 import LandingScreen from './components/LandingScreen';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faSun, faMoon, faSync, faHome } from '@fortawesome/free-solid-svg-icons';
-import ivaoService from './services/IvaoService';
 
 function App() {
   const [airports, setAirports] = useState([]);
@@ -19,7 +18,6 @@ function App() {
   const [error, setError] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
   const [darkMode, setDarkMode] = useState(false);
-  const [ivaoStatus, setIvaoStatus] = useState(null);
 
 
   const API_URL = process.env.REACT_APP_API_URL || (process.env.NODE_ENV === 'production' ? '' : 'http://localhost:3001');

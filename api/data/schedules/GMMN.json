@@ -1,8 +1,328 @@
 [
     {
-        "flightNumber": "AT 401",
-        "callsignIATA": "AT401",
-        "callsignICAO": "RAM401",
+        "flightNumber": "G9335",
+        "callsignIATA": "G9335",
+        "callsignICAO": "ABY335",
+        "airline": {
+            "codeIATA": "G9",
+            "codeICAO": "ABY",
+            "name": "Air Arabia"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "LFMT",
+            "iata": "MPL",
+            "name": "Montpellier Méditerranée"
+        },
+        "departure": {
+            "scheduled": "2026-01-30T07:00:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T09:30:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "scheduled",
+        "distance": null
+    },
+    {
+        "flightNumber": "3O265",
+        "callsignIATA": "3O265",
+        "callsignICAO": "MAC265",
+        "airline": {
+            "codeIATA": "3O",
+            "codeICAO": "MAC",
+            "name": "Air Arabia Maroc"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "LFSB",
+            "iata": "BSL",
+            "name": "Euroairport Swiss"
+        },
+        "departure": {
+            "scheduled": "2026-01-30T07:00:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T10:10:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "scheduled",
+        "distance": null
+    },
+    {
+        "flightNumber": "G9373",
+        "callsignIATA": "G9373",
+        "callsignICAO": "ABY373",
+        "airline": {
+            "codeIATA": "G9",
+            "codeICAO": "ABY",
+            "name": "Air Arabia"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "LEBL",
+            "iata": "BCN",
+            "name": "El Prat De Llobregat"
+        },
+        "departure": {
+            "scheduled": "2026-01-30T06:05:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T08:15:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "scheduled",
+        "distance": null
+    },
+    {
+        "flightNumber": "AF1497",
+        "callsignIATA": "AF1497",
+        "callsignICAO": "AFR1497",
+        "airline": {
+            "codeIATA": "AF",
+            "codeICAO": "AFR",
+            "name": "Air France"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "LFPG",
+            "iata": "CDG",
+            "name": "Charles De Gaulle"
+        },
+        "departure": {
+            "scheduled": "2026-01-30T05:55:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T09:10:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "scheduled",
+        "distance": null
+    },
+    {
+        "flightNumber": "MU1924",
+        "callsignIATA": "MU1924",
+        "callsignICAO": "CES1924",
+        "airline": {
+            "codeIATA": "MU",
+            "codeICAO": "CES",
+            "name": "China Eastern Airlines"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "LFPG",
+            "iata": "CDG",
+            "name": "Charles De Gaulle"
+        },
+        "departure": {
+            "scheduled": "2026-01-30T05:55:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T09:10:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "scheduled",
+        "distance": null
+    },
+    {
+        "flightNumber": "KL2111",
+        "callsignIATA": "KL2111",
+        "callsignICAO": "KLM2111",
+        "airline": {
+            "codeIATA": "KL",
+            "codeICAO": "KLM",
+            "name": "KLM"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "LFPG",
+            "iata": "CDG",
+            "name": "Charles De Gaulle"
+        },
+        "departure": {
+            "scheduled": "2026-01-30T05:55:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T09:10:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "scheduled",
+        "distance": null
+    },
+    {
+        "flightNumber": "KE6374",
+        "callsignIATA": "KE6374",
+        "callsignICAO": "KAL6374",
+        "airline": {
+            "codeIATA": "KE",
+            "codeICAO": "KAL",
+            "name": "Korean Air"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "LFPG",
+            "iata": "CDG",
+            "name": "Charles De Gaulle"
+        },
+        "departure": {
+            "scheduled": "2026-01-30T05:55:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T09:10:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "scheduled",
+        "distance": null
+    },
+    {
+        "flightNumber": "DL8216",
+        "callsignIATA": "DL8216",
+        "callsignICAO": "DAL8216",
+        "airline": {
+            "codeIATA": "DL",
+            "codeICAO": "DAL",
+            "name": "Delta Air Lines"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "LFPG",
+            "iata": "CDG",
+            "name": "Charles De Gaulle"
+        },
+        "departure": {
+            "scheduled": "2026-01-30T05:55:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T09:10:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "scheduled",
+        "distance": null
+    },
+    {
+        "flightNumber": "KQ6103",
+        "callsignIATA": "KQ6103",
+        "callsignICAO": "KQA6103",
+        "airline": {
+            "codeIATA": "KQ",
+            "codeICAO": "KQA",
+            "name": "Kenya Airways"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "DGAA",
+            "iata": "ACC",
+            "name": "Kotoka"
+        },
+        "departure": {
+            "scheduled": "2026-01-30T01:40:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T05:05:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "scheduled",
+        "distance": null
+    },
+    {
+        "flightNumber": "TK6441",
+        "callsignIATA": "TK6441",
+        "callsignICAO": "THY6441",
+        "airline": {
+            "codeIATA": "TK",
+            "codeICAO": "THY",
+            "name": "Turkish Airlines"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "EBBR",
+            "iata": "BRU",
+            "name": "Brussels Airport"
+        },
+        "departure": {
+            "scheduled": "2026-01-30T03:50:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T08:25:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "scheduled",
+        "distance": null
+    },
+    {
+        "flightNumber": "AT706",
+        "callsignIATA": "AT706",
+        "callsignICAO": "RAM706",
         "airline": {
             "codeIATA": "AT",
             "codeICAO": "RAM",
@@ -11,56 +331,2872 @@
         "origin": {
             "icao": "GMMN",
             "iata": "CMN",
-            "name": "Casablanca Mohammed V"
+            "name": "Mohamed V"
         },
         "destination": {
-            "icao": "KJFK",
-            "iata": "JFK",
-            "name": "New York JFK"
+            "icao": "LFPO",
+            "iata": "ORY",
+            "name": "Orly"
         },
         "departure": {
-            "scheduled": "2026-01-30T10:00:00Z"
+            "scheduled": "2026-01-30T03:45:00+00:00"
         },
         "arrival": {
-            "scheduled": "2026-01-30T18:00:00Z"
+            "scheduled": "2026-01-30T06:40:00+00:00"
         },
         "aircraft": {
-            "type": "B789",
-            "wakeTurbulence": "H"
-        },
-        "status": "scheduled",
-        "distance": 3100
-    },
-    {
-        "flightNumber": "AF 1597",
-        "callsignIATA": "AF1597",
-        "callsignICAO": "AFR1597",
-        "airline": {
-            "codeIATA": "AF",
-            "codeICAO": "AFR",
-            "name": "Air France"
-        },
-        "origin": {
-            "icao": "LFPG",
-            "iata": "CDG",
-            "name": "Paris Charles de Gaulle"
-        },
-        "destination": {
-            "icao": "GMMN",
-            "iata": "CMN",
-            "name": "Casablanca Mohammed V"
-        },
-        "departure": {
-            "scheduled": "2026-01-30T09:00:00Z"
-        },
-        "arrival": {
-            "scheduled": "2026-01-30T12:00:00Z"
-        },
-        "aircraft": {
-            "type": "A321",
+            "type": "N/A",
             "wakeTurbulence": "M"
         },
         "status": "scheduled",
-        "distance": 1200
+        "distance": null
+    },
+    {
+        "flightNumber": "AT844",
+        "callsignIATA": "AT844",
+        "callsignICAO": "RAM844",
+        "airline": {
+            "codeIATA": "AT",
+            "codeICAO": "RAM",
+            "name": "Royal Air Maroc"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "EBBR",
+            "iata": "BRU",
+            "name": "Brussels Airport"
+        },
+        "departure": {
+            "scheduled": "2026-01-30T03:20:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T06:35:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "scheduled",
+        "distance": null
+    },
+    {
+        "flightNumber": "AT702",
+        "callsignIATA": "AT702",
+        "callsignICAO": "RAM702",
+        "airline": {
+            "codeIATA": "AT",
+            "codeICAO": "RAM",
+            "name": "Royal Air Maroc"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "LFPG",
+            "iata": "CDG",
+            "name": "Charles De Gaulle"
+        },
+        "departure": {
+            "scheduled": "2026-01-30T02:55:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T06:00:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "scheduled",
+        "distance": null
+    },
+    {
+        "flightNumber": "MH5886",
+        "callsignIATA": "MH5886",
+        "callsignICAO": "MAS5886",
+        "airline": {
+            "codeIATA": "MH",
+            "codeICAO": "MAS",
+            "name": "Malaysia Airlines"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "LFPG",
+            "iata": "CDG",
+            "name": "Charles De Gaulle"
+        },
+        "departure": {
+            "scheduled": "2026-01-30T02:55:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T06:00:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "scheduled",
+        "distance": null
+    },
+    {
+        "flightNumber": "AT246",
+        "callsignIATA": "AT246",
+        "callsignICAO": "RAM246",
+        "airline": {
+            "codeIATA": "AT",
+            "codeICAO": "RAM",
+            "name": "Royal Air Maroc"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "OMDB",
+            "iata": "DXB",
+            "name": "Dubai"
+        },
+        "departure": {
+            "scheduled": "2026-01-30T02:30:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T13:15:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "scheduled",
+        "distance": null
+    },
+    {
+        "flightNumber": "EK3522",
+        "callsignIATA": "EK3522",
+        "callsignICAO": "UAE3522",
+        "airline": {
+            "codeIATA": "EK",
+            "codeICAO": "UAE",
+            "name": "Emirates"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "OMDB",
+            "iata": "DXB",
+            "name": "Dubai"
+        },
+        "departure": {
+            "scheduled": "2026-01-30T02:30:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T13:15:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "scheduled",
+        "distance": null
+    },
+    {
+        "flightNumber": "TU706",
+        "callsignIATA": "TU706",
+        "callsignICAO": "TAR706",
+        "airline": {
+            "codeIATA": "TU",
+            "codeICAO": "TAR",
+            "name": "Tunisair"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "DTTA",
+            "iata": "TUN",
+            "name": "Carthage"
+        },
+        "departure": {
+            "scheduled": "2026-01-30T02:00:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T04:25:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "scheduled",
+        "distance": null
+    },
+    {
+        "flightNumber": "AT515",
+        "callsignIATA": "AT515",
+        "callsignICAO": "RAM515",
+        "airline": {
+            "codeIATA": "AT",
+            "codeICAO": "RAM",
+            "name": "Royal Air Maroc"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "DGAA",
+            "iata": "ACC",
+            "name": "Kotoka"
+        },
+        "departure": {
+            "scheduled": "2026-01-30T01:40:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T05:05:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "scheduled",
+        "distance": null
+    },
+    {
+        "flightNumber": "IB7659",
+        "callsignIATA": "IB7659",
+        "callsignICAO": "IBE7659",
+        "airline": {
+            "codeIATA": "IB",
+            "codeICAO": "IBE",
+            "name": "Iberia"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "DGAA",
+            "iata": "ACC",
+            "name": "Kotoka"
+        },
+        "departure": {
+            "scheduled": "2026-01-30T01:40:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T05:05:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "scheduled",
+        "distance": null
+    },
+    {
+        "flightNumber": "AT533",
+        "callsignIATA": "AT533",
+        "callsignICAO": "RAM533",
+        "airline": {
+            "codeIATA": "AT",
+            "codeICAO": "RAM",
+            "name": "Royal Air Maroc"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "DIAP",
+            "iata": "ABJ",
+            "name": "Felix Houphouet Boigny"
+        },
+        "departure": {
+            "scheduled": "2026-01-30T01:20:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T04:50:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "QR4513",
+        "callsignIATA": "QR4513",
+        "callsignICAO": "QTR4513",
+        "airline": {
+            "codeIATA": "QR",
+            "codeICAO": "QTR",
+            "name": "Qatar Airways"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "DIAP",
+            "iata": "ABJ",
+            "name": "Felix Houphouet Boigny"
+        },
+        "departure": {
+            "scheduled": "2026-01-30T01:20:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T04:50:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "IB7662",
+        "callsignIATA": "IB7662",
+        "callsignICAO": "IBE7662",
+        "airline": {
+            "codeIATA": "IB",
+            "codeICAO": "IBE",
+            "name": "Iberia"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "DIAP",
+            "iata": "ABJ",
+            "name": "Felix Houphouet Boigny"
+        },
+        "departure": {
+            "scheduled": "2026-01-30T01:20:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T04:50:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "EY4228",
+        "callsignIATA": "EY4228",
+        "callsignICAO": "ETD4228",
+        "airline": {
+            "codeIATA": "EY",
+            "codeICAO": "ETD",
+            "name": "Etihad Airways"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "DIAP",
+            "iata": "ABJ",
+            "name": "Felix Houphouet Boigny"
+        },
+        "departure": {
+            "scheduled": "2026-01-30T01:20:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T04:50:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "BA8442",
+        "callsignIATA": "BA8442",
+        "callsignICAO": "BAW8442",
+        "airline": {
+            "codeIATA": "BA",
+            "codeICAO": "BAW",
+            "name": "British Airways"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "DIAP",
+            "iata": "ABJ",
+            "name": "Felix Houphouet Boigny"
+        },
+        "departure": {
+            "scheduled": "2026-01-30T01:20:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T04:50:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "AZ6148",
+        "callsignIATA": "AZ6148",
+        "callsignICAO": "AZA6148",
+        "airline": {
+            "codeIATA": "AZ",
+            "codeICAO": "AZA",
+            "name": "Alitalia"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "DIAP",
+            "iata": "ABJ",
+            "name": "Felix Houphouet Boigny"
+        },
+        "departure": {
+            "scheduled": "2026-01-30T01:20:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T04:50:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "AA7985",
+        "callsignIATA": "AA7985",
+        "callsignICAO": "AAL7985",
+        "airline": {
+            "codeIATA": "AA",
+            "codeICAO": "AAL",
+            "name": "American Airlines"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "DIAP",
+            "iata": "ABJ",
+            "name": "Felix Houphouet Boigny"
+        },
+        "departure": {
+            "scheduled": "2026-01-30T01:20:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T04:50:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "AT565",
+        "callsignIATA": "AT565",
+        "callsignICAO": "RAM565",
+        "airline": {
+            "codeIATA": "AT",
+            "codeICAO": "RAM",
+            "name": "Royal Air Maroc"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GFLL",
+            "iata": "FNA",
+            "name": "Lungi International"
+        },
+        "departure": {
+            "scheduled": "2026-01-30T01:15:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T04:20:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "BA8432",
+        "callsignIATA": "BA8432",
+        "callsignICAO": "BAW8432",
+        "airline": {
+            "codeIATA": "BA",
+            "codeICAO": "BAW",
+            "name": "British Airways"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GFLL",
+            "iata": "FNA",
+            "name": "Lungi International"
+        },
+        "departure": {
+            "scheduled": "2026-01-30T01:15:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T04:20:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "PC652",
+        "callsignIATA": "PC652",
+        "callsignICAO": "PGT652",
+        "airline": {
+            "codeIATA": "PC",
+            "codeICAO": "PGT",
+            "name": "Pegasus"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "LTFJ",
+            "iata": "SAW",
+            "name": "Sabiha Gokcen"
+        },
+        "departure": {
+            "scheduled": "2026-01-30T01:10:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T07:50:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "AT555",
+        "callsignIATA": "AT555",
+        "callsignICAO": "RAM555",
+        "airline": {
+            "codeIATA": "AT",
+            "codeICAO": "RAM",
+            "name": "Royal Air Maroc"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "DNMM",
+            "iata": "LOS",
+            "name": "Murtala Muhammed"
+        },
+        "departure": {
+            "scheduled": "2026-01-30T01:10:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T05:30:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "scheduled",
+        "distance": null
+    },
+    {
+        "flightNumber": "AT272",
+        "callsignIATA": "AT272",
+        "callsignICAO": "RAM272",
+        "airline": {
+            "codeIATA": "AT",
+            "codeICAO": "RAM",
+            "name": "Royal Air Maroc"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "HECA",
+            "iata": "CAI",
+            "name": "Cairo International Airport"
+        },
+        "departure": {
+            "scheduled": "2026-01-30T01:10:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T07:30:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "MS8102",
+        "callsignIATA": "MS8102",
+        "callsignICAO": "MSR8102",
+        "airline": {
+            "codeIATA": "MS",
+            "codeICAO": "MSR",
+            "name": "EgyptAir"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "HECA",
+            "iata": "CAI",
+            "name": "Cairo International Airport"
+        },
+        "departure": {
+            "scheduled": "2026-01-30T01:10:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T07:30:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "AT587",
+        "callsignIATA": "AT587",
+        "callsignICAO": "RAM587",
+        "airline": {
+            "codeIATA": "AT",
+            "codeICAO": "RAM",
+            "name": "Royal Air Maroc"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "DNAA",
+            "iata": "ABV",
+            "name": "Nnamdi Azikiwe International Airport"
+        },
+        "departure": {
+            "scheduled": "2026-01-30T01:01:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T05:50:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "QR4542",
+        "callsignIATA": "QR4542",
+        "callsignICAO": "QTR4542",
+        "airline": {
+            "codeIATA": "QR",
+            "codeICAO": "QTR",
+            "name": "Qatar Airways"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "DNAA",
+            "iata": "ABV",
+            "name": "Nnamdi Azikiwe International Airport"
+        },
+        "departure": {
+            "scheduled": "2026-01-30T01:01:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T05:50:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "HV3069",
+        "callsignIATA": "HV3069",
+        "callsignICAO": "TRA3069",
+        "airline": {
+            "codeIATA": "HV",
+            "codeICAO": "TRA",
+            "name": "Transavia"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "LFPO",
+            "iata": "ORY",
+            "name": "Orly"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T19:15:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-29T22:25:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "AT511",
+        "callsignIATA": "AT511",
+        "callsignICAO": "RAM511",
+        "airline": {
+            "codeIATA": "AT",
+            "codeICAO": "RAM",
+            "name": "Royal Air Maroc"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GQNO",
+            "iata": "NKC",
+            "name": "Nouakchott"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T23:50:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T01:45:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "QR4582",
+        "callsignIATA": "QR4582",
+        "callsignICAO": "QTR4582",
+        "airline": {
+            "codeIATA": "QR",
+            "codeICAO": "QTR",
+            "name": "Qatar Airways"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GQNO",
+            "iata": "NKC",
+            "name": "Nouakchott"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T23:50:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T01:45:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "L66115",
+        "callsignIATA": "L66115",
+        "callsignICAO": "MAI6115",
+        "airline": {
+            "codeIATA": "L6",
+            "codeICAO": "MAI",
+            "name": "Mauritania Airlines International"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GQNO",
+            "iata": "NKC",
+            "name": "Nouakchott"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T23:50:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T01:45:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "AA7956",
+        "callsignIATA": "AA7956",
+        "callsignICAO": "AAL7956",
+        "airline": {
+            "codeIATA": "AA",
+            "codeICAO": "AAL",
+            "name": "American Airlines"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GQNO",
+            "iata": "NKC",
+            "name": "Nouakchott"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T23:50:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T01:45:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "AT440",
+        "callsignIATA": "AT440",
+        "callsignICAO": "RAM440",
+        "airline": {
+            "codeIATA": "AT",
+            "codeICAO": "RAM",
+            "name": "Royal Air Maroc"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GMFF",
+            "iata": "FEZ",
+            "name": "Sais"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T23:20:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T00:30:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "TK8313",
+        "callsignIATA": "TK8313",
+        "callsignICAO": "THY8313",
+        "airline": {
+            "codeIATA": "TK",
+            "codeICAO": "THY",
+            "name": "Turkish Airlines"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GMFF",
+            "iata": "FEZ",
+            "name": "Sais"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T23:20:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T00:30:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "QR4523",
+        "callsignIATA": "QR4523",
+        "callsignICAO": "QTR4523",
+        "airline": {
+            "codeIATA": "QR",
+            "codeICAO": "QTR",
+            "name": "Qatar Airways"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GMFF",
+            "iata": "FEZ",
+            "name": "Sais"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T23:20:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T00:30:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "G38961",
+        "callsignIATA": "G38961",
+        "callsignICAO": "GLO8961",
+        "airline": {
+            "codeIATA": "G3",
+            "codeICAO": "GLO",
+            "name": "Gol"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GMFF",
+            "iata": "FEZ",
+            "name": "Sais"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T23:20:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T00:30:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "AZ6122",
+        "callsignIATA": "AZ6122",
+        "callsignICAO": "AZA6122",
+        "airline": {
+            "codeIATA": "AZ",
+            "codeICAO": "AZA",
+            "name": "Alitalia"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GMFF",
+            "iata": "FEZ",
+            "name": "Sais"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T23:20:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T00:30:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "AT1400",
+        "callsignIATA": "AT1400",
+        "callsignICAO": "RAM1400",
+        "airline": {
+            "codeIATA": "AT",
+            "codeICAO": "RAM",
+            "name": "Royal Air Maroc"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GMFO",
+            "iata": "OUD",
+            "name": "Les Anglades"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T23:10:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T00:25:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "TK8422",
+        "callsignIATA": "TK8422",
+        "callsignICAO": "THY8422",
+        "airline": {
+            "codeIATA": "TK",
+            "codeICAO": "THY",
+            "name": "Turkish Airlines"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GMFO",
+            "iata": "OUD",
+            "name": "Les Anglades"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T23:10:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T00:25:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "IB7637",
+        "callsignIATA": "IB7637",
+        "callsignICAO": "IBE7637",
+        "airline": {
+            "codeIATA": "IB",
+            "codeICAO": "IBE",
+            "name": "Iberia"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GMFO",
+            "iata": "OUD",
+            "name": "Les Anglades"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T23:10:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T00:25:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "AZ6138",
+        "callsignIATA": "AZ6138",
+        "callsignICAO": "AZA6138",
+        "airline": {
+            "codeIATA": "AZ",
+            "codeICAO": "AZA",
+            "name": "Alitalia"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GMFO",
+            "iata": "OUD",
+            "name": "Les Anglades"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T23:10:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T00:25:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "AT470",
+        "callsignIATA": "AT470",
+        "callsignICAO": "RAM470",
+        "airline": {
+            "codeIATA": "AT",
+            "codeICAO": "RAM",
+            "name": "Royal Air Maroc"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GMTT",
+            "iata": "TNG",
+            "name": "Boukhalef"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T23:05:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T00:25:00+00:00"
+        },
+        "aircraft": {
+            "type": "AT76",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "TK8320",
+        "callsignIATA": "TK8320",
+        "callsignICAO": "THY8320",
+        "airline": {
+            "codeIATA": "TK",
+            "codeICAO": "THY",
+            "name": "Turkish Airlines"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GMTT",
+            "iata": "TNG",
+            "name": "Boukhalef"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T23:05:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T00:25:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "QR4544",
+        "callsignIATA": "QR4544",
+        "callsignICAO": "QTR4544",
+        "airline": {
+            "codeIATA": "QR",
+            "codeICAO": "QTR",
+            "name": "Qatar Airways"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GMTT",
+            "iata": "TNG",
+            "name": "Boukhalef"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T23:05:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T00:25:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "G38963",
+        "callsignIATA": "G38963",
+        "callsignICAO": "GLO8963",
+        "airline": {
+            "codeIATA": "G3",
+            "codeICAO": "GLO",
+            "name": "Gol"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GMTT",
+            "iata": "TNG",
+            "name": "Boukhalef"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T23:05:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T00:25:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "EY4224",
+        "callsignIATA": "EY4224",
+        "callsignICAO": "ETD4224",
+        "airline": {
+            "codeIATA": "EY",
+            "codeICAO": "ETD",
+            "name": "Etihad Airways"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GMTT",
+            "iata": "TNG",
+            "name": "Boukhalef"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T23:05:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T00:25:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "AZ6140",
+        "callsignIATA": "AZ6140",
+        "callsignICAO": "AZA6140",
+        "airline": {
+            "codeIATA": "AZ",
+            "codeICAO": "AZA",
+            "name": "Alitalia"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GMTT",
+            "iata": "TNG",
+            "name": "Boukhalef"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T23:05:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T00:25:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "AT597",
+        "callsignIATA": "AT597",
+        "callsignICAO": "RAM597",
+        "airline": {
+            "codeIATA": "AT",
+            "codeICAO": "RAM",
+            "name": "Royal Air Maroc"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GVAC",
+            "iata": "SID",
+            "name": "Amilcar Cabral International"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T23:05:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T00:55:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "AT1446",
+        "callsignIATA": "AT1446",
+        "callsignICAO": "RAM1446",
+        "airline": {
+            "codeIATA": "AT",
+            "codeICAO": "RAM",
+            "name": "Royal Air Maroc"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GMFK",
+            "iata": "ERH",
+            "name": "Moulay Ali Cherif"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T23:00:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-29T23:59:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "IB7619",
+        "callsignIATA": "IB7619",
+        "callsignICAO": "IBE7619",
+        "airline": {
+            "codeIATA": "IB",
+            "codeICAO": "IBE",
+            "name": "Iberia"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GMFK",
+            "iata": "ERH",
+            "name": "Moulay Ali Cherif"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T23:00:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-29T23:59:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "G38973",
+        "callsignIATA": "G38973",
+        "callsignICAO": "GLO8973",
+        "airline": {
+            "codeIATA": "G3",
+            "codeICAO": "GLO",
+            "name": "Gol"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GMFK",
+            "iata": "ERH",
+            "name": "Moulay Ali Cherif"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T23:00:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-29T23:59:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "AZ6124",
+        "callsignIATA": "AZ6124",
+        "callsignICAO": "AZA6124",
+        "airline": {
+            "codeIATA": "AZ",
+            "codeICAO": "AZA",
+            "name": "Alitalia"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GMFK",
+            "iata": "ERH",
+            "name": "Moulay Ali Cherif"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T23:00:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-29T23:59:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "AT403",
+        "callsignIATA": "AT403",
+        "callsignICAO": "RAM403",
+        "airline": {
+            "codeIATA": "AT",
+            "codeICAO": "RAM",
+            "name": "Royal Air Maroc"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GMMX",
+            "iata": "RAK",
+            "name": "Menara"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T23:00:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-29T23:50:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "scheduled",
+        "distance": null
+    },
+    {
+        "flightNumber": "TK8880",
+        "callsignIATA": "TK8880",
+        "callsignICAO": "THY8880",
+        "airline": {
+            "codeIATA": "TK",
+            "codeICAO": "THY",
+            "name": "Turkish Airlines"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GMMX",
+            "iata": "RAK",
+            "name": "Menara"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T23:00:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-29T23:50:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "scheduled",
+        "distance": null
+    },
+    {
+        "flightNumber": "EY4216",
+        "callsignIATA": "EY4216",
+        "callsignICAO": "ETD4216",
+        "airline": {
+            "codeIATA": "EY",
+            "codeICAO": "ETD",
+            "name": "Etihad Airways"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GMMX",
+            "iata": "RAK",
+            "name": "Menara"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T23:00:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-29T23:50:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "scheduled",
+        "distance": null
+    },
+    {
+        "flightNumber": "AZ6102",
+        "callsignIATA": "AZ6102",
+        "callsignICAO": "AZA6102",
+        "airline": {
+            "codeIATA": "AZ",
+            "codeICAO": "AZA",
+            "name": "Alitalia"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GMMX",
+            "iata": "RAK",
+            "name": "Menara"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T23:00:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-29T23:50:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "scheduled",
+        "distance": null
+    },
+    {
+        "flightNumber": "AT220",
+        "callsignIATA": "AT220",
+        "callsignICAO": "RAM220",
+        "airline": {
+            "codeIATA": "AT",
+            "codeICAO": "RAM",
+            "name": "Royal Air Maroc"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "UUEE",
+            "iata": "SVO",
+            "name": "Sheremetyevo International"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T22:55:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T07:10:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "AT431",
+        "callsignIATA": "AT431",
+        "callsignICAO": "RAM431",
+        "airline": {
+            "codeIATA": "AT",
+            "codeICAO": "RAM",
+            "name": "Royal Air Maroc"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GMAD",
+            "iata": "AGA",
+            "name": "Agadir Almassira"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T22:55:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-29T23:55:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "unknown",
+        "distance": null
+    },
+    {
+        "flightNumber": "QR4543",
+        "callsignIATA": "QR4543",
+        "callsignICAO": "QTR4543",
+        "airline": {
+            "codeIATA": "QR",
+            "codeICAO": "QTR",
+            "name": "Qatar Airways"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GMAD",
+            "iata": "AGA",
+            "name": "Agadir Almassira"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T22:55:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-29T23:55:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "unknown",
+        "distance": null
+    },
+    {
+        "flightNumber": "IB7636",
+        "callsignIATA": "IB7636",
+        "callsignICAO": "IBE7636",
+        "airline": {
+            "codeIATA": "IB",
+            "codeICAO": "IBE",
+            "name": "Iberia"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GMAD",
+            "iata": "AGA",
+            "name": "Agadir Almassira"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T22:55:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-29T23:55:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "unknown",
+        "distance": null
+    },
+    {
+        "flightNumber": "EY4208",
+        "callsignIATA": "EY4208",
+        "callsignICAO": "ETD4208",
+        "airline": {
+            "codeIATA": "EY",
+            "codeICAO": "ETD",
+            "name": "Etihad Airways"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GMAD",
+            "iata": "AGA",
+            "name": "Agadir Almassira"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T22:55:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-29T23:55:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "unknown",
+        "distance": null
+    },
+    {
+        "flightNumber": "BA8431",
+        "callsignIATA": "BA8431",
+        "callsignICAO": "BAW8431",
+        "airline": {
+            "codeIATA": "BA",
+            "codeICAO": "BAW",
+            "name": "British Airways"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GMAD",
+            "iata": "AGA",
+            "name": "Agadir Almassira"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T22:55:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-29T23:55:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "unknown",
+        "distance": null
+    },
+    {
+        "flightNumber": "AZ6121",
+        "callsignIATA": "AZ6121",
+        "callsignICAO": "AZA6121",
+        "airline": {
+            "codeIATA": "AZ",
+            "codeICAO": "AZA",
+            "name": "Alitalia"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GMAD",
+            "iata": "AGA",
+            "name": "Agadir Almassira"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T22:55:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-29T23:55:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "unknown",
+        "distance": null
+    },
+    {
+        "flightNumber": "AT579",
+        "callsignIATA": "AT579",
+        "callsignICAO": "RAM579",
+        "airline": {
+            "codeIATA": "AT",
+            "codeICAO": "RAM",
+            "name": "Royal Air Maroc"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GBYD",
+            "iata": "BJL",
+            "name": "Yundum International"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T22:50:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T01:30:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "unknown",
+        "distance": null
+    },
+    {
+        "flightNumber": "QR4576",
+        "callsignIATA": "QR4576",
+        "callsignICAO": "QTR4576",
+        "airline": {
+            "codeIATA": "QR",
+            "codeICAO": "QTR",
+            "name": "Qatar Airways"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GBYD",
+            "iata": "BJL",
+            "name": "Yundum International"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T22:50:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T01:30:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "unknown",
+        "distance": null
+    },
+    {
+        "flightNumber": "AT567",
+        "callsignIATA": "AT567",
+        "callsignICAO": "RAM567",
+        "airline": {
+            "codeIATA": "AT",
+            "codeICAO": "RAM",
+            "name": "Royal Air Maroc"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GLRB",
+            "iata": "ROB",
+            "name": "Roberts International"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T22:45:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T02:05:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "TK8308",
+        "callsignIATA": "TK8308",
+        "callsignICAO": "THY8308",
+        "airline": {
+            "codeIATA": "TK",
+            "codeICAO": "THY",
+            "name": "Turkish Airlines"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GLRB",
+            "iata": "ROB",
+            "name": "Roberts International"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T22:45:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T02:05:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "BA8434",
+        "callsignIATA": "BA8434",
+        "callsignICAO": "BAW8434",
+        "airline": {
+            "codeIATA": "BA",
+            "codeICAO": "BAW",
+            "name": "British Airways"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GLRB",
+            "iata": "ROB",
+            "name": "Roberts International"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T22:45:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T02:05:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "AT501",
+        "callsignIATA": "AT501",
+        "callsignICAO": "RAM501",
+        "airline": {
+            "codeIATA": "AT",
+            "codeICAO": "RAM",
+            "name": "Royal Air Maroc"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GOBD",
+            "iata": "DSS",
+            "name": "Blaise Diagne International Airport\r\n"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T22:45:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T01:05:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "QR4598",
+        "callsignIATA": "QR4598",
+        "callsignICAO": "QTR4598",
+        "airline": {
+            "codeIATA": "QR",
+            "codeICAO": "QTR",
+            "name": "Qatar Airways"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GOBD",
+            "iata": "DSS",
+            "name": "Blaise Diagne International Airport\r\n"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T22:45:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T01:05:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "HC3034",
+        "callsignIATA": "HC3034",
+        "callsignICAO": "HGO3034",
+        "airline": {
+            "codeIATA": "HC",
+            "codeICAO": "HGO",
+            "name": "One Air"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GOBD",
+            "iata": "DSS",
+            "name": "Blaise Diagne International Airport\r\n"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T22:45:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T01:05:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "EY4212",
+        "callsignIATA": "EY4212",
+        "callsignICAO": "ETD4212",
+        "airline": {
+            "codeIATA": "EY",
+            "codeICAO": "ETD",
+            "name": "Etihad Airways"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GOBD",
+            "iata": "DSS",
+            "name": "Blaise Diagne International Airport\r\n"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T22:45:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T01:05:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "AT545",
+        "callsignIATA": "AT545",
+        "callsignICAO": "RAM545",
+        "airline": {
+            "codeIATA": "AT",
+            "codeICAO": "RAM",
+            "name": "Royal Air Maroc"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "DFFD",
+            "iata": "OUA",
+            "name": "Ouagadougou"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T22:40:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T01:15:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "unknown",
+        "distance": null
+    },
+    {
+        "flightNumber": "QR4578",
+        "callsignIATA": "QR4578",
+        "callsignICAO": "QTR4578",
+        "airline": {
+            "codeIATA": "QR",
+            "codeICAO": "QTR",
+            "name": "Qatar Airways"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "DFFD",
+            "iata": "OUA",
+            "name": "Ouagadougou"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T22:40:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T01:15:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "unknown",
+        "distance": null
+    },
+    {
+        "flightNumber": "AT593",
+        "callsignIATA": "AT593",
+        "callsignICAO": "RAM593",
+        "airline": {
+            "codeIATA": "AT",
+            "codeICAO": "RAM",
+            "name": "Royal Air Maroc"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GGOV",
+            "iata": "OXB",
+            "name": "Osvaldo Vieira International"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T22:35:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T01:20:00+00:00"
+        },
+        "aircraft": {
+            "type": "B738",
+            "wakeTurbulence": "M"
+        },
+        "status": "unknown",
+        "distance": null
+    },
+    {
+        "flightNumber": "AT1420",
+        "callsignIATA": "AT1420",
+        "callsignICAO": "RAM1420",
+        "airline": {
+            "codeIATA": "AT",
+            "codeICAO": "RAM",
+            "name": "Royal Air Maroc"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GMMH",
+            "iata": "VIL",
+            "name": "Dakhla"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T22:30:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T00:50:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "QR4506",
+        "callsignIATA": "QR4506",
+        "callsignICAO": "QTR4506",
+        "airline": {
+            "codeIATA": "QR",
+            "codeICAO": "QTR",
+            "name": "Qatar Airways"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GMMH",
+            "iata": "VIL",
+            "name": "Dakhla"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T22:30:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T00:50:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "IB7640",
+        "callsignIATA": "IB7640",
+        "callsignICAO": "IBE7640",
+        "airline": {
+            "codeIATA": "IB",
+            "codeICAO": "IBE",
+            "name": "Iberia"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GMMH",
+            "iata": "VIL",
+            "name": "Dakhla"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T22:30:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T00:50:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "G38970",
+        "callsignIATA": "G38970",
+        "callsignICAO": "GLO8970",
+        "airline": {
+            "codeIATA": "G3",
+            "codeICAO": "GLO",
+            "name": "Gol"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GMMH",
+            "iata": "VIL",
+            "name": "Dakhla"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T22:30:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T00:50:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "AZ6142",
+        "callsignIATA": "AZ6142",
+        "callsignICAO": "AZA6142",
+        "airline": {
+            "codeIATA": "AZ",
+            "codeICAO": "AZA",
+            "name": "Alitalia"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GMMH",
+            "iata": "VIL",
+            "name": "Dakhla"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T22:30:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T00:50:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "AT523",
+        "callsignIATA": "AT523",
+        "callsignICAO": "RAM523",
+        "airline": {
+            "codeIATA": "AT",
+            "codeICAO": "RAM",
+            "name": "Royal Air Maroc"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GABS",
+            "iata": "BKO",
+            "name": "Bamako"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T22:30:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T00:55:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "QR4580",
+        "callsignIATA": "QR4580",
+        "callsignICAO": "QTR4580",
+        "airline": {
+            "codeIATA": "QR",
+            "codeICAO": "QTR",
+            "name": "Qatar Airways"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GABS",
+            "iata": "BKO",
+            "name": "Bamako"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T22:30:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T00:55:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "AT547",
+        "callsignIATA": "AT547",
+        "callsignICAO": "RAM547",
+        "airline": {
+            "codeIATA": "AT",
+            "codeICAO": "RAM",
+            "name": "Royal Air Maroc"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "DRRN",
+            "iata": "NIM",
+            "name": "Niamey"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T22:25:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T02:15:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "unknown",
+        "distance": null
+    },
+    {
+        "flightNumber": "QR4587",
+        "callsignIATA": "QR4587",
+        "callsignICAO": "QTR4587",
+        "airline": {
+            "codeIATA": "QR",
+            "codeICAO": "QTR",
+            "name": "Qatar Airways"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "DRRN",
+            "iata": "NIM",
+            "name": "Niamey"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T22:25:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T02:15:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "unknown",
+        "distance": null
+    },
+    {
+        "flightNumber": "EY4242",
+        "callsignIATA": "EY4242",
+        "callsignICAO": "ETD4242",
+        "airline": {
+            "codeIATA": "EY",
+            "codeICAO": "ETD",
+            "name": "Etihad Airways"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "DRRN",
+            "iata": "NIM",
+            "name": "Niamey"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T22:25:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T02:15:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "unknown",
+        "distance": null
+    },
+    {
+        "flightNumber": "AT527",
+        "callsignIATA": "AT527",
+        "callsignICAO": "RAM527",
+        "airline": {
+            "codeIATA": "AT",
+            "codeICAO": "RAM",
+            "name": "Royal Air Maroc"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GUCY",
+            "iata": "CKY",
+            "name": "Conakry"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T22:20:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T01:20:00+00:00"
+        },
+        "aircraft": {
+            "type": "B38M",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "QR4516",
+        "callsignIATA": "QR4516",
+        "callsignICAO": "QTR4516",
+        "airline": {
+            "codeIATA": "QR",
+            "codeICAO": "QTR",
+            "name": "Qatar Airways"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GUCY",
+            "iata": "CKY",
+            "name": "Conakry"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T22:20:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T01:20:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "AT285",
+        "callsignIATA": "AT285",
+        "callsignICAO": "RAM285",
+        "airline": {
+            "codeIATA": "AT",
+            "codeICAO": "RAM",
+            "name": "Royal Air Maroc"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "FKKD",
+            "iata": "DLA",
+            "name": "Douala"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T21:55:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T03:05:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "QR4502",
+        "callsignIATA": "QR4502",
+        "callsignICAO": "QTR4502",
+        "airline": {
+            "codeIATA": "QR",
+            "codeICAO": "QTR",
+            "name": "Qatar Airways"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "FKKD",
+            "iata": "DLA",
+            "name": "Douala"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T21:55:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-30T03:05:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "active",
+        "distance": null
+    },
+    {
+        "flightNumber": "AT429",
+        "callsignIATA": "AT429",
+        "callsignICAO": "RAM429",
+        "airline": {
+            "codeIATA": "AT",
+            "codeICAO": "RAM",
+            "name": "Royal Air Maroc"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GMAD",
+            "iata": "AGA",
+            "name": "Agadir Almassira"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T21:50:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-29T23:15:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "unknown",
+        "distance": null
+    },
+    {
+        "flightNumber": "QR4550",
+        "callsignIATA": "QR4550",
+        "callsignICAO": "QTR4550",
+        "airline": {
+            "codeIATA": "QR",
+            "codeICAO": "QTR",
+            "name": "Qatar Airways"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GMAD",
+            "iata": "AGA",
+            "name": "Agadir Almassira"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T21:50:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-29T23:15:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "unknown",
+        "distance": null
+    },
+    {
+        "flightNumber": "G38958",
+        "callsignIATA": "G38958",
+        "callsignICAO": "GLO8958",
+        "airline": {
+            "codeIATA": "G3",
+            "codeICAO": "GLO",
+            "name": "Gol"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GMAD",
+            "iata": "AGA",
+            "name": "Agadir Almassira"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T21:50:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-29T23:15:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "unknown",
+        "distance": null
+    },
+    {
+        "flightNumber": "EY4271",
+        "callsignIATA": "EY4271",
+        "callsignICAO": "ETD4271",
+        "airline": {
+            "codeIATA": "EY",
+            "codeICAO": "ETD",
+            "name": "Etihad Airways"
+        },
+        "origin": {
+            "icao": "GMMN",
+            "iata": "CMN",
+            "name": "Mohamed V"
+        },
+        "destination": {
+            "icao": "GMAD",
+            "iata": "AGA",
+            "name": "Agadir Almassira"
+        },
+        "departure": {
+            "scheduled": "2026-01-29T21:50:00+00:00"
+        },
+        "arrival": {
+            "scheduled": "2026-01-29T23:15:00+00:00"
+        },
+        "aircraft": {
+            "type": "N/A",
+            "wakeTurbulence": "M"
+        },
+        "status": "unknown",
+        "distance": null
     }
 ]
